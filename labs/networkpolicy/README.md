@@ -152,7 +152,7 @@ DNS requires a network plugin.
 
 The network plugin runs as a DaemonSet, but it also uses privileged init containers to modify the network configuration of OS on the node. That's why we're using k3d, so we don't impact the networking on your main cluster:
 
-- [k3d/calico.yaml](./specs/k3d/calico.yaml) - is from the Calico docs, it includes the network plugin and RBAC rules
+- [k3d/calico-v3.33.0.yaml](./specs/k3d/calico-v3.33.0.yaml) - is from the Calico docs, it includes the network plugin and RBAC rules
 
 _Install Calico and wait for the Pods to become ready:_
 

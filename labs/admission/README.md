@@ -17,7 +17,7 @@ Admission controller webhooks give you the most flexibility, because you can run
 
 **But** the Kubernetes API server will only call webhooks if they're served over HTTPS using a trusted certificate. A nice way to do that is with [cert-manager](https://cert-manager.io), a CNCF project which generates TLS certificates and creates them as Secrets.
 
-- [cert-manager/1.5.3.yaml](./specs/cert-manager/1.5.3.yaml) - is from the cert-manager docs, it includes custom resources to create Certificates and all the RBAC, Services and Deployments to run the manager. It's complex - but definitely better than managing certs yourself
+- [cert-manager/v1.21.2.yaml](./specs/cert-manager/v1.21.2.yaml) - is from the cert-manager docs, it includes custom resources to create Certificates and all the RBAC, Services and Deployments to run the manager. It's complex - but definitely better than managing certs yourself
 
 _Deploy cert-manager:_
 
@@ -235,7 +235,7 @@ kubectl delete crd,ValidatingWebhookConfiguration,MutatingWebhookConfiguration -
 
 OPA Gatekeeper is another complex component, where you trade the overhead of managing it with the issues of running your own controllers:
 
-- [opa-gatekeeper/3.5.yaml](./specs/opa-gatekeeper/3.5.yaml) - deploys custom resources to describe admission rules, RBAC for the controller and a Service and Deployment to run it
+- [opa-gatekeeper/v3.23.1.yaml](./specs/opa-gatekeeper/v3.23.1.yaml) - deploys custom resources to describe admission rules, RBAC for the controller and a Service and Deployment to run it
 
 _Deploy OPA:_
 
