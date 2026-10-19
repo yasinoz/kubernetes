@@ -36,7 +36,7 @@ These are samples in the major languages:
 
 ## Multi-Stage Dockerfiles
 
-There are two build engines in Docker - the original and [BuildKit](). They both produce compatible images, but BuildKit is optimized and it's the default in recent Docker installations. 
+There are two build engines in Docker - the legacy builder and [BuildKit](https://docs.docker.com/build/buildkit/). They both produce compatible images, but BuildKit is optimized and has been the default since Docker 23; the legacy builder is deprecated. 
 
 We'll start by using the original build engine so it's clear what's happening in the build - later we'll switch to BuildKit which has better performance:
 
@@ -148,7 +148,7 @@ Real multi-stage builds use an SDK (Software Development Kit) image to compile t
 
 The images you use and the commands you run are different for each language, but you'll find [official images on Docker Hub for all the major platforms](https://hub.docker.com/search?q=&type=image&image_filter=official&category=languages), including:
 
-- [maven](https://hub.docker.com/_/maven) and [gradle](https://hub.docker.com/_/gradle) to build Java apps - using [openjdk]() for the runtime image
+- [maven](https://hub.docker.com/_/maven) and [gradle](https://hub.docker.com/_/gradle) to build Java apps - using [eclipse-temurin](https://hub.docker.com/_/eclipse-temurin) for the runtime image (Docker Hub's `openjdk` image is deprecated)
 - [python](https://hub.docker.com/_/python) - has Pip installed for dependencies
 - [node](https://hub.docker.com/_/node) for Node.js apps - this has NPM so you can install packages in the build stage
 - [golang](https://hub.docker.com/_/golang) for Go apps - they don't need a runtime so the final image can start from [scratch](https://hub.docker.com/_/scratch)
