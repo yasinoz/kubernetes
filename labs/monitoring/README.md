@@ -179,7 +179,7 @@ Click _Upload JSON file_ and browse to your course repo, to load the file `labs/
 
 Click _Import_ and the dashboard will load. It looks something like this:
 
-![Fulfilment dashboard in Grafana](/img/grafana-fulfilment.png)
+![Fulfilment dashboard in Grafana](../../img/grafana-fulfilment.png)
 
 All those graphs are being powered by the simple numeric metrics from the Pod. Grafana is not super user-friendly. You can click the title bar of any of the graphs and select _Edit_ to see the PromQL query.
 
@@ -211,11 +211,11 @@ They aren't being scraped by Prometheus yet because they don't match the discove
 
 You should see targets like this in Prometheus:
 
-![Metrics targets in Prometheus](/img/monitoring-lab-targets.png)
+![Metrics targets in Prometheus](../../img/monitoring-lab-targets.png)
 
 And then you'll see something like this in Grafana:
 
-![Cluster dashboard in Grafana](/img/monitoring-lab-dashboard.png)
+![Cluster dashboard in Grafana](../../img/monitoring-lab-dashboard.png)
 
 > Stuck? Try [hints](hints.md) or check the [solution](solution.md).
 

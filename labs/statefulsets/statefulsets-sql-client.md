@@ -23,7 +23,7 @@ kubectl wait --for=condition=Ready pod -l app=adminer-web
 * _Database_: **postgres**
 * _Permanent login_: **checked**
 
-![](/img/adminer-login.png)
+![](../../img/adminer-login.png)
 
 
 Now you;re connected to the database on the Primary Pod. You can browse to the Products table and see the data:
@@ -37,7 +37,7 @@ OR:
 Click the pencil icon in the _Modify_ column and make a change to one row, like editing the name of a product:
 
 
-![](/img/adminer-updated.png)
+![](../../img/adminer-updated.png)
 
 Now click _Logout_ in the top right and log in again to the replica database server. The connection details are all the same except the server name, which uses the Service for Pod 1:
 

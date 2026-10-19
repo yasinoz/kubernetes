@@ -16,7 +16,7 @@ The Ingress spec supports HTTPS and the Nginx ingress controller is already runn
 
 You'll see an error because this is a self-signed certificate, which means it's not trusted. You can check the cert details in your browser and you'll see something like this:
 
-![](/img/ingress-controller-cert.png)
+![](../../img/ingress-controller-cert.png)
 
 You can apply your own certificates in Ingress rules. You might buy a TLS cert from an online provider specific to your host domains, but we'll generate our own:
 

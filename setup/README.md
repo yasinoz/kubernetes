@@ -23,11 +23,11 @@ The download and install takes a few minutes. When it's done, run the _Docker_ a
 
 Right-click that whale and click _Settings_:
 
-![](/img/docker-desktop-settings.png)
+![](../img/docker-desktop-settings.png)
 
 In the settings Windows select _Kubernetes_ from the left menu and click _Enable Kubernetes_: 
 
-![](/img/docker-desktop-kubernetes.png)
+![](../img/docker-desktop-kubernetes.png)
 
 > Docker downloads all the Kubernetes components and sets them up. That can take a few minutes too. When the Docker logo and the Kubernetes logo in the UI are both green, everything is running.
 
@@ -59,7 +59,7 @@ k3d cluster create k8s -p "30000-30040:30000-30040@server:0"
 <details>
   <summary>An alternative Dockerized Kubernetes setup</summary>
 
-If you're already using [Kind](kind.sigs.k8s.io/), use this setup which is tweaked for the labs:
+If you're already using [Kind](https://kind.sigs.k8s.io/), use this setup which is tweaked for the labs:
 
 ```
 kind create cluster --name k8s --config setup/kind.yaml

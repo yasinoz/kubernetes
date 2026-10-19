@@ -28,7 +28,7 @@ kubectl get nodes -L cis-compliance -l cis-compliance
 
 My solution uses required rules to ensure Pods only run on valid nodes, and preferred rules to place more Pods on verified nodes:
 
-- [whoami-compliance-preferred.yaml](.\solution\whoami-compliance-preferred.yaml) 
+- [whoami-compliance-preferred.yaml](././solution/whoami-compliance-preferred.yaml) 
 
 ```
 kubectl apply -f labs\affinity\solution

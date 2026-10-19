@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: courselabs/fulfilment-processor
+          image: courselabs/fulfilment-processor:25.03
           env:
             - name: Observability__Metrics__IncludeRuntime
               value: 'true'

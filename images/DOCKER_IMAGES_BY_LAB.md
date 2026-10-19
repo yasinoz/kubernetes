@@ -8,7 +8,7 @@ The following Docker images are used across all labs:
 
 ### Official/Third-Party Images
 - `adminer:4-standalone` - Database management UI
-- `alpine:3.24`, `alpine:3.14` - Base Alpine Linux images
+- `alpine:3.24`, `alpine:3.24` - Base Alpine Linux images
 - `busybox:1.34.0` - Lightweight utilities
 - `fluent/fluent-bit:1.8.3` - Log forwarding
 - `gcr.io/cadvisor/cadvisor:v0.45.0` - Container metrics
@@ -42,8 +42,8 @@ The following Docker images are used across all labs:
 ### Course/Tutorial Images
 - `courselabs/bad-sleep` - Demonstration of failed container
 - `docker.elastic.co/elasticsearch/elasticsearch:9.5.5` - Search engine
-- `courselabs/fulfilment-api` - Demo API
-- `courselabs/fulfilment-processor` - Demo processor
+- `courselabs/fulfilment-api:25.03` - Demo API
+- `courselabs/fulfilment-processor:25.03` - Demo processor
 - `grafana/grafana:13.2.4` - Metrics visualization
 - `courselabs/keda-web:latest` - KEDA demo web app
 - `courselabs/keda-worker:latest` - KEDA demo worker
@@ -155,16 +155,16 @@ The following Docker images are used across all labs:
 ### logging
 - `docker.elastic.co/elasticsearch/elasticsearch:9.5.5` - Log storage
 - `docker.elastic.co/kibana/kibana:9.5.5` - Log visualization
-- `alpine:3.14` - Sidecar container
-- `courselabs/fulfilment-api` - Demo API
-- `courselabs/fulfilment-processor` - Demo processor
+- `alpine:3.24` - Sidecar container
+- `courselabs/fulfilment-api:25.03` - Demo API
+- `courselabs/fulfilment-processor:25.03` - Demo processor
 - `fluent/fluent-bit:1.8.3` - Log forwarding
 - `kiamol/ch03-sleep` - Sleep container
 
 ### monitoring
 - `grafana/grafana:13.2.4` - Metrics visualization
 - `k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.2.0` - Cluster metrics
-- `courselabs/fulfilment-processor` - Demo app
+- `courselabs/fulfilment-processor:25.03` - Demo app
 - `prom/prometheus:v3.15.0` - Metrics collection
 - `gcr.io/cadvisor/cadvisor:v0.45.0` - Container metrics
 

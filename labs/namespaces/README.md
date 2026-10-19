@@ -329,7 +329,7 @@ kx -
 ```
 And if you set up a fancy shell with [ZSH and PowerLevel10K](https://medium.com/@shivam1/make-your-terminal-beautiful-and-fast-with-zsh-shell-and-powerlevel10k-6484461c6efb) you'll get a reminder which context and namespace you're using when you type `k`:
 
-![](/img/ohmyzsh.png)
+![](../../img/ohmyzsh.png)
 
 </details><br/>
 

@@ -24,7 +24,7 @@ They've made a start - all the components are packaged into container images and
 
 Use this architecture diagram as the basis to model your YAML. It has the port numbers, Docker image tags and the number of replicas needed for each component:
 
-![](/img/widgetario-architecture.png)
+![](../img/widgetario-architecture.png)
 
 It's not much to go on, but it has all the information you need for the first stage.
 
@@ -37,7 +37,7 @@ The component names in the diagram are the DNS names the app expects to use. And
 
 When you're done you should be able to browse to the Service port on your cluster and see this:
 
-![](/img/widgetario-solution-1.png)
+![](../img/widgetario-solution-1.png)
 
 <details>
   <summary>Solution</summary>
@@ -81,7 +81,7 @@ You have the app working from part 1, so you can investigate the current configu
 
 When you've rolled out your update, the UI will be updated but the products and stock details should be the same:
 
-![](/img/widgetario-solution-2.png)
+![](../img/widgetario-solution-2.png)
 
 <details>
   <summary>Solution</summary>
@@ -248,7 +248,7 @@ All the API and web servers publish metrics, so we don't need to change any code
 
 Here's the dashboard you should see:
 
-![](/img/hackathon-grafana.png)
+![](../img/hackathon-grafana.png)
 
 And then you'll also need to set up centralized logging:
 
@@ -258,7 +258,7 @@ And then you'll also need to set up centralized logging:
 
 Here's what the Kibana dashboard should look like:
 
-![](/img/hackathon-kibana.png)
+![](../img/hackathon-kibana.png)
 
 <details>
   <summary>Hints</summary>

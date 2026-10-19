@@ -92,7 +92,7 @@ spec:
         runAsGroup: 3000
       containers:
         - name: logger
-          image: alpine:3.14
+          image: alpine:3.24
           command: ['sh', '-c', 'tail -f /logs-ro/app.log'] 
           volumeMounts:
             - name: logs

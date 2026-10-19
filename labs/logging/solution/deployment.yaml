@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: courselabs/fulfilment-processor
+          image: courselabs/fulfilment-processor:25.03
           env:
             - name: Observability__Logging__File
               value: 'true'
@@ -29,7 +29,7 @@ spec:
             - name: logs
               mountPath: "/app/logs"
         - name: logger
-          image: alpine:3.14
+          image: alpine:3.24
           command: ['sh', '-c', 'tail -f /logs-ro/fulfilment-processor.log'] 
           volumeMounts:
             - name: logs

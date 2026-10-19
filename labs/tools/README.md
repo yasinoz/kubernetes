@@ -31,7 +31,7 @@ ___
 
 This is the standard web UI for the Kubernetes project:
 
-![](/img/tools-dashboard-pods.png)
+![](../../img/tools-dashboard-pods.png)
 
 Deploy metrics server:
 
@@ -86,13 +86,13 @@ kubectl -n kubernetes-dashboard get secret rng-admin-user-token -o go-template="
 
 This SA doesn't have full permissions, so you can only edit in the `rng` namespace.
 
-![](/img/tools-dashboard-edit.png)
+![](../../img/tools-dashboard-edit.png)
 
 ## K9s
 
 K9s is terminal-based GUI for navigating Kubernetes clusters: https://github.com/derailed/k9s#installation
 
-![](/img/tools-k9s-pods.png)
+![](../../img/tools-k9s-pods.png)
 
 
 ```
@@ -127,7 +127,7 @@ Switch resources:
 - :secrets - x to decode
 
 
-![](/img/tools-k9s-secret.png)
+![](../../img/tools-k9s-secret.png)
 
 Ctrl-C to exit
 
@@ -203,7 +203,7 @@ kubectl access-matrix --sa kubernetes-dashboard:rng-admin-user -n rng
 
 This is a great tool for notifying you about changes in your environment. You need admin access to a Slack workspace to set it up.
 
-![](/img/tools-kubewatch-slack.png)
+![](../../img/tools-kubewatch-slack.png)
 
 Slack - create new workspace, call the first channel lab-tools
 

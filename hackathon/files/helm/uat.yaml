@@ -20,7 +20,7 @@ sapiImage: widgetario/stock-api:21.03
 sapiReplicaCount: 3
 
 # Website ("web")
-webLoggerImage: alpine:3.14
+webLoggerImage: alpine:3.24
 webReplicaCount: 2
 webTheme: dark
 webImage: widgetario/web:21.03-v2
