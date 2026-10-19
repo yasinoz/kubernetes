@@ -5,5 +5,5 @@ serviceNodePort: 30028
 
 # deployment
 replicaCount: 2
-imageTag: sixeyed/whoami:21.04
+imageTag: sixeyed/whoami:24.07
 serverMode: q

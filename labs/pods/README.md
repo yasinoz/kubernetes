@@ -22,7 +22,7 @@ metadata:
 spec:
   containers:
     - name: app
-      image: sixeyed/whoami:21.04
+      image: sixeyed/whoami:24.07
 ```
 
 Every Kubernetes resource requires these four fields:

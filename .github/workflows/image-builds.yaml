@@ -25,5 +25,5 @@ jobs:
       - name: Build & push
         working-directory: ./src
         run: |
-          docker-compose build 
-          docker-compose push 
+          docker compose build 
+          docker compose push 
