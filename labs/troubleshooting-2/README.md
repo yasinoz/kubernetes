@@ -1,3 +1,14 @@
+---
+title: Troubleshooting 2
+lang: en
+slug: troubleshooting-2
+section: real-world
+order: 2
+duration: 60
+requires: [kubernetes]
+status: needs-review
+upstream: labs/troubleshooting-2
+---
 # Troubleshooting Application Modeling in Kubernetes
 
 Modelling apps in Kubernetes involves multiple resources, Even simple apps use ConfigMaps, Secrets, PersistentVolumes, and Namespaces. Any mistakes in configuration will make apps fail in interesting ways.

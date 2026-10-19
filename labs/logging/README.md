@@ -1,3 +1,14 @@
+---
+title: Logging
+lang: en
+slug: logging
+section: operating
+order: 3
+duration: 45
+requires: [kubernetes]
+status: needs-review
+upstream: labs/logging
+---
 # Centralized Logging with Elasticsearch, Fluentd and Kibana (EFK)
 
 It's difficult to work with Pod logs at scale - Kubectl doesn't let you search or filter log entries. The production-ready option is to run a central logging subsystem, which collects all Pod logs and stores them in a central database. EFK is the usual system for doing that in Kubernetes.

@@ -1,3 +1,14 @@
+---
+title: BuildKit
+lang: en
+slug: buildkit
+section: cicd
+order: 2
+duration: 40
+requires: [kubernetes]
+status: needs-review
+upstream: labs/buildkit
+---
 # Building Docker Images with BuildKit
 
 BuildKit is the image building engine inside Docker. It's not part of other container runtimes - like containerd - but you can run a BuildKit server in a container.

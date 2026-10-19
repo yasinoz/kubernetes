@@ -1,3 +1,14 @@
+---
+title: Deployments
+lang: en
+slug: deployments
+section: core
+order: 4
+duration: 45
+requires: [kubernetes]
+status: needs-review
+upstream: labs/deployments
+---
 # Scaling and Managing Pods with Deployments
 
 You don't usually create Pods directly because that isn't flexible - you can't change a Pod to release application updates, and you can only scale them by manually deploying new Pods. Don't do that.

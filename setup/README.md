@@ -1,3 +1,12 @@
+---
+title: Environment Setup
+lang: en
+slug: setup
+section: index
+order: 0
+status: needs-review
+upstream: setup/README.md
+---
 # Running a Local Kubernetes Cluster
 
 Kubernetes clusters can have hundreds of nodes in production, but you can run a single-node cluster on your laptop and it works in the same way.

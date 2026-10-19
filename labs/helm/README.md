@@ -1,3 +1,14 @@
+---
+title: Helm
+lang: en
+slug: helm
+section: cicd
+order: 3
+duration: 50
+requires: [kubernetes]
+status: needs-review
+upstream: labs/helm
+---
 # Packaging and Deploying Apps with Helm
 
 Helm adds a templating language on top of the standard Kubernetes YAML. You turn your object specs into templates with variables for values which need to change between releases or environments - like the image tag to use, or the number of replicas. Helm has its own CLI which you use to install and upgrade apps, but the deployed objects are standard Kubernetes resources you can manage with Kubectl.

@@ -1,3 +1,14 @@
+---
+title: Operators
+lang: en
+slug: operators
+section: advanced
+order: 3
+duration: 55
+requires: [kubernetes]
+status: needs-review
+upstream: labs/operators
+---
 # Managing Apps with Operators
 
 Some applications need a lot of operational knowledge - not just the complexity of modelling the app in Kubernetes, but ongoing maintenance tasks. Think of a stateful application where you want to create backups of data. The application deployment is modelled in Kubernetes resources, and it would be great to model the operations in Kubernetes too.

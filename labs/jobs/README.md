@@ -1,3 +1,14 @@
+---
+title: Jobs and CronJobs
+lang: en
+slug: jobs
+section: advanced-modelling
+order: 4
+duration: 40
+requires: [kubernetes]
+status: needs-review
+upstream: labs/jobs
+---
 # Running One-off Pods with Jobs and Recurring Pods with CronJobs
 
 Sometimes you want a Pod to execute some work and then stop. You could deploy a Pod spec, but that has limited retry support if the work fails, but you can't use a Deployment because it will replace the Pod if it exits successfully.

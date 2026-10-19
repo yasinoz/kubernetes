@@ -1,3 +1,14 @@
+---
+title: DaemonSets
+lang: en
+slug: daemonsets
+section: advanced-modelling
+order: 2
+duration: 35
+requires: [kubernetes]
+status: needs-review
+upstream: labs/daemonsets
+---
 
 # Running Replicas on Every Node with DaemonSets
 

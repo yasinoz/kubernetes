@@ -1,3 +1,14 @@
+---
+title: Affinity
+lang: en
+slug: affinity
+section: production
+order: 2
+duration: 45
+requires: [kubernetes]
+status: needs-review
+upstream: labs/affinity
+---
 # Scheduling with Pod and Node Affinity
 
 Affinity is a feature where you can request Pods to be scheduled in relation to other Pods or nodes. You might want to run multiple Pods in a Deployment and have them all running on different nodes, or you might have a web application where you want web Pods running on the same node as API Pods.

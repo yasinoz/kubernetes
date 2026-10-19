@@ -1,3 +1,12 @@
+---
+title: Kubernetes Labs
+lang: en
+slug: index
+section: index
+order: 0
+status: needs-review
+upstream: index.md
+---
 Welcome to the Kubernetes labs.
 
 These are hands-on resources to help you learn Kubernetes.
@@ -14,59 +23,96 @@ These are hands-on resources to help you learn Kubernetes.
 - _Optional_
     - Install [Visual Studio Code](https://code.visualstudio.com) (free - Windows, macOS and Linux) to browse the repo and documentation
 
+<!-- labs:start -->
+
 ## Core Kubernetes
 
-- [Nodes](labs/nodes/README.md)
-- [Pods](labs/pods/README.md)
-- [Services](labs/services/README.md)
-- [Deployments](labs/deployments/README.md)
+The objects you use every day.
+
+| Lab | Time | Needs |
+|---|---|---|
+| [Nodes](labs/nodes/README.md) | 30 min | kubernetes |
+| [Pods](labs/pods/README.md) | 45 min | kubernetes |
+| [Services](labs/services/README.md) | 45 min | kubernetes |
+| [Deployments](labs/deployments/README.md) | 45 min | kubernetes |
 
 ## Application Modelling
 
-- [ConfigMaps](labs/configmaps/README.md)
-- [Secrets](labs/secrets/README.md)
-- [PersistentVolumes](labs/persistentvolumes/README.md)
-- [Namespaces](labs/namespaces/README.md)
+Configuration, secrets and storage.
+
+| Lab | Time | Needs |
+|---|---|---|
+| [ConfigMaps](labs/configmaps/README.md) | 40 min | kubernetes |
+| [Secrets](labs/secrets/README.md) | 40 min | kubernetes |
+| [PersistentVolumes](labs/persistentvolumes/README.md) | 45 min | kubernetes |
+| [Namespaces](labs/namespaces/README.md) | 35 min | kubernetes |
 
 ## Advanced Application Modelling
 
-- [Role-based Access Control (RBAC)](labs/rbac/README.md)
-- [DaemonSets](labs/daemonsets/README.md)
-- [Ingress](labs/ingress/README.md)
-- [Jobs and CronJobs](labs/jobs/README.md)
-- [StatefulSets](labs/statefulsets/README.md)
+Access control and the workload types beyond Deployments.
+
+| Lab | Time | Needs |
+|---|---|---|
+| [Role-based Access Control (RBAC)](labs/rbac/README.md) | 50 min | kubernetes |
+| [DaemonSets](labs/daemonsets/README.md) | 35 min | kubernetes |
+| [Ingress](labs/ingress/README.md) | 50 min | kubernetes |
+| [Jobs and CronJobs](labs/jobs/README.md) | 40 min | kubernetes |
+| [StatefulSets](labs/statefulsets/README.md) | 50 min | kubernetes |
 
 ## Operating Kubernetes
 
-- [Production readiness](labs/productionizing/README.md)
-- [Monitoring](labs/monitoring/README.md)
-- [Logging](labs/logging/README.md)
+Getting a cluster ready for real traffic.
 
-## Continuous Integration and Continuous Deployment (CI/CD)
+| Lab | Time | Needs |
+|---|---|---|
+| [Production Readiness](labs/productionizing/README.md) | 50 min | kubernetes |
+| [Monitoring](labs/monitoring/README.md) | 45 min | kubernetes |
+| [Logging](labs/logging/README.md) | 45 min | kubernetes |
 
-- [Image optimizing](labs/docker/README.md)
-- [BuildKit](labs/buildkit/README.md)
-- [Helm](labs/helm/README.md)
-- [Rollouts](labs/rollouts/README.md)
-- [Jenkins](labs/jenkins/README.md)
-- [ArgoCD](labs/argo/README.md)
+## CI/CD
+
+Building images and deploying them automatically.
+
+| Lab | Time | Needs |
+|---|---|---|
+| [Image Optimizing](labs/docker/README.md) | 40 min | kubernetes |
+| [BuildKit](labs/buildkit/README.md) | 40 min | kubernetes |
+| [Helm](labs/helm/README.md) | 50 min | kubernetes |
+| [Rollouts](labs/rollouts/README.md) | 45 min | kubernetes |
+| [Jenkins](labs/jenkins/README.md) | 55 min | kubernetes |
+| [ArgoCD](labs/argo/README.md) | 55 min | kubernetes |
 
 ## Advanced Kubernetes
 
-- [NetworkPolicy](labs/networkpolicy/README.md)
-- [Admission](labs/admission/README.md)
-- [Operators](labs/operators/README.md)
+Network policy, admission control and operators.
+
+| Lab | Time | Needs |
+|---|---|---|
+| [NetworkPolicy](labs/networkpolicy/README.md) | 45 min | kubernetes |
+| [Admission](labs/admission/README.md) | 55 min | kubernetes |
+| [Operators](labs/operators/README.md) | 55 min | kubernetes |
 
 ## Production Operations
 
-- [Clusters](labs/clusters/README.md)
-- [Affinity](labs/affinity/README.md)
-- [Tools](labs/tools/README.md)
+Cluster topology, scheduling and the tools you actually use.
+
+| Lab | Time | Needs |
+|---|---|---|
+| [Clusters](labs/clusters/README.md) | 45 min | kubernetes |
+| [Affinity](labs/affinity/README.md) | 45 min | kubernetes |
+| [Tools](labs/tools/README.md) | 40 min | kubernetes |
 
 ## Real Kubernetes
 
-- [Troubleshooting](labs/troubleshooting/README.md)
-- [Hackathon!](hackathon/README.md)
+Broken clusters, and how you work out why.
+
+| Lab | Time | Needs |
+|---|---|---|
+| [Troubleshooting](labs/troubleshooting/README.md) | 60 min | kubernetes |
+| [Troubleshooting 2](labs/troubleshooting-2/README.md) | 60 min | kubernetes |
+| [Troubleshooting 3](labs/troubleshooting-3/README.md) | 60 min | kubernetes |
+
+<!-- labs:end -->
 
 ### Credits
 

@@ -1,3 +1,14 @@
+---
+title: PersistentVolumes
+lang: en
+slug: persistentvolumes
+section: modelling
+order: 3
+duration: 45
+requires: [kubernetes]
+status: needs-review
+upstream: labs/persistentvolumes
+---
 # Storing Application Data with PersistentVolumes
 
 Kubernetes creates the container filesystem and it can mount multiple sources. We've seen ConfigMaps and Secrets which are typically read-only mounts, now we'll use writeable [volumes](https://kubernetes.io/docs/concepts/storage/volumes/).

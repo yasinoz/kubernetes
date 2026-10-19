@@ -1,3 +1,14 @@
+---
+title: Nodes
+lang: en
+slug: nodes
+section: core
+order: 1
+duration: 30
+requires: [kubernetes]
+status: needs-review
+upstream: labs/nodes
+---
 # Examining Nodes with Kubectl
 
 Nodes are the machines in your cluster which actually run containers. Kubernetes stores information about nodes in its database and you can query it using the command line.

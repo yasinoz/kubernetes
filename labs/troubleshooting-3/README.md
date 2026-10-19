@@ -1,3 +1,14 @@
+---
+title: Troubleshooting 3
+lang: en
+slug: troubleshooting-3
+section: real-world
+order: 3
+duration: 60
+requires: [kubernetes]
+status: needs-review
+upstream: labs/troubleshooting-3
+---
 # Troubleshooting Advanced Kubernetes Components
 
 More advanced app models use Helm for package management, along with complex resources like Ingress for HTTP routing and StatefulSets for stateful applications.

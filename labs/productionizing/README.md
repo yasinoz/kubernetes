@@ -1,3 +1,14 @@
+---
+title: Production Readiness
+lang: en
+slug: productionizing
+section: operating
+order: 1
+duration: 50
+requires: [kubernetes]
+status: needs-review
+upstream: labs/productionizing
+---
 # Preparing for Production
 
 It's straightforward to model your apps in Kubernetes and get them running, but there's more work to do before you get to production.

@@ -1,3 +1,14 @@
+---
+title: Namespaces
+lang: en
+slug: namespaces
+section: modelling
+order: 4
+duration: 35
+requires: [kubernetes]
+status: needs-review
+upstream: labs/namespaces
+---
 # Isolating Workloads with Namespaces
 
 One of the great features of Kubernetes is that you can run any type of application - many organizations are looking to migrate their whole application landscape onto Kubernetes. That could make operations difficult if there was no way to segregate the cluster so Kubernetes has [namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/).

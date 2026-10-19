@@ -1,0 +1,323 @@
+# Kubernetes track - bolum ve lab tanimlari (iki dilli).
+#
+# Bolum ve lab sirasi reponun mevcut index.md dosyasindan alindi; egitmenin
+# kurdugu ogretim sirasi korunuyor.
+#
+# manifest.json bu dosyadan + lab README frontmatter'larindan uretilir:
+#   python ../labs-platform/tools/make-manifest.py . --write-frontmatter
+#
+# status degerleri:
+#   upstream     - henuz dokunulmadi
+#   needs-review - modernize edildi, canli test EDILMEDI
+#   updated      - modernize edildi VE uctan uca calistirildi
+
+track:
+  slug: kubernetes
+  titles:
+    en: Kubernetes Labs
+    tr: Kubernetes Laboratuvarları
+  summaries:
+    en: Hands-on Kubernetes labs, from Pods to production operations.
+    tr: Pod'lardan üretim operasyonlarına kadar uygulamalı Kubernetes laboratuvarları.
+  repo:
+    owner: yasinoz
+    name: kubernetes
+    branch: main
+
+sections:
+  - slug: core
+    order: 1
+    titles:
+      en: Core Kubernetes
+      tr: Kubernetes Çekirdeği
+    summaries:
+      en: The objects you use every day.
+      tr: Her gün kullandığınız nesneler.
+    labs:
+      - slug: nodes
+        order: 1
+        duration: 30
+        requires: [kubernetes]
+        titles:
+          en: Nodes
+          tr: Düğümler
+      - slug: pods
+        order: 2
+        duration: 45
+        requires: [kubernetes]
+        titles:
+          en: Pods
+          tr: Pod'lar
+      - slug: services
+        order: 3
+        duration: 45
+        requires: [kubernetes]
+        titles:
+          en: Services
+          tr: Service'ler
+      - slug: deployments
+        order: 4
+        duration: 45
+        requires: [kubernetes]
+        titles:
+          en: Deployments
+          tr: Deployment'lar
+
+  - slug: modelling
+    order: 2
+    titles:
+      en: Application Modelling
+      tr: Uygulama Modelleme
+    summaries:
+      en: Configuration, secrets and storage.
+      tr: Yapılandırma, gizli bilgiler ve depolama.
+    labs:
+      - slug: configmaps
+        order: 1
+        duration: 40
+        requires: [kubernetes]
+        titles:
+          en: ConfigMaps
+          tr: ConfigMap'ler
+      - slug: secrets
+        order: 2
+        duration: 40
+        requires: [kubernetes]
+        titles:
+          en: Secrets
+          tr: Secret'lar
+      - slug: persistentvolumes
+        order: 3
+        duration: 45
+        requires: [kubernetes]
+        titles:
+          en: PersistentVolumes
+          tr: PersistentVolume'lar
+      - slug: namespaces
+        order: 4
+        duration: 35
+        requires: [kubernetes]
+        titles:
+          en: Namespaces
+          tr: Namespace'ler
+
+  - slug: advanced-modelling
+    order: 3
+    titles:
+      en: Advanced Application Modelling
+      tr: İleri Uygulama Modelleme
+    summaries:
+      en: Access control and the workload types beyond Deployments.
+      tr: Erişim denetimi ve Deployment dışındaki iş yükü tipleri.
+    labs:
+      - slug: rbac
+        order: 1
+        duration: 50
+        requires: [kubernetes]
+        titles:
+          en: Role-based Access Control (RBAC)
+          tr: Rol Tabanlı Erişim Denetimi (RBAC)
+      - slug: daemonsets
+        order: 2
+        duration: 35
+        requires: [kubernetes]
+        titles:
+          en: DaemonSets
+          tr: DaemonSet'ler
+      - slug: ingress
+        order: 3
+        duration: 50
+        requires: [kubernetes]
+        titles:
+          en: Ingress
+          tr: Ingress
+      - slug: jobs
+        order: 4
+        duration: 40
+        requires: [kubernetes]
+        titles:
+          en: Jobs and CronJobs
+          tr: Job ve CronJob'lar
+      - slug: statefulsets
+        order: 5
+        duration: 50
+        requires: [kubernetes]
+        titles:
+          en: StatefulSets
+          tr: StatefulSet'ler
+
+  - slug: operating
+    order: 4
+    titles:
+      en: Operating Kubernetes
+      tr: Kubernetes'i İşletmek
+    summaries:
+      en: Getting a cluster ready for real traffic.
+      tr: Bir kümeyi gerçek trafiğe hazırlamak.
+    labs:
+      - slug: productionizing
+        order: 1
+        duration: 50
+        requires: [kubernetes]
+        titles:
+          en: Production Readiness
+          tr: Üretime Hazırlık
+      - slug: monitoring
+        order: 2
+        duration: 45
+        requires: [kubernetes]
+        titles:
+          en: Monitoring
+          tr: İzleme
+      - slug: logging
+        order: 3
+        duration: 45
+        requires: [kubernetes]
+        titles:
+          en: Logging
+          tr: Loglama
+
+  - slug: cicd
+    order: 5
+    titles:
+      en: CI/CD
+      tr: CI/CD
+    summaries:
+      en: Building images and deploying them automatically.
+      tr: İmaj derlemek ve otomatik dağıtmak.
+    labs:
+      - slug: docker
+        order: 1
+        duration: 40
+        requires: [kubernetes]
+        titles:
+          en: Image Optimizing
+          tr: İmaj Optimizasyonu
+      - slug: buildkit
+        order: 2
+        duration: 40
+        requires: [kubernetes]
+        titles:
+          en: BuildKit
+          tr: BuildKit
+      - slug: helm
+        order: 3
+        duration: 50
+        requires: [kubernetes]
+        titles:
+          en: Helm
+          tr: Helm
+      - slug: rollouts
+        order: 4
+        duration: 45
+        requires: [kubernetes]
+        titles:
+          en: Rollouts
+          tr: Rollout'lar
+      - slug: jenkins
+        order: 5
+        duration: 55
+        requires: [kubernetes]
+        titles:
+          en: Jenkins
+          tr: Jenkins
+      - slug: argo
+        order: 6
+        duration: 55
+        requires: [kubernetes]
+        titles:
+          en: ArgoCD
+          tr: ArgoCD
+
+  - slug: advanced
+    order: 6
+    titles:
+      en: Advanced Kubernetes
+      tr: İleri Kubernetes
+    summaries:
+      en: Network policy, admission control and operators.
+      tr: Ağ politikası, admission control ve operator'lar.
+    labs:
+      - slug: networkpolicy
+        order: 1
+        duration: 45
+        requires: [kubernetes]
+        titles:
+          en: NetworkPolicy
+          tr: NetworkPolicy
+      - slug: admission
+        order: 2
+        duration: 55
+        requires: [kubernetes]
+        titles:
+          en: Admission
+          tr: Admission Control
+      - slug: operators
+        order: 3
+        duration: 55
+        requires: [kubernetes]
+        titles:
+          en: Operators
+          tr: Operator'lar
+
+  - slug: production
+    order: 7
+    titles:
+      en: Production Operations
+      tr: Üretim Operasyonları
+    summaries:
+      en: Cluster topology, scheduling and the tools you actually use.
+      tr: Küme topolojisi, zamanlama ve gerçekten kullandığınız araçlar.
+    labs:
+      - slug: clusters
+        order: 1
+        duration: 45
+        requires: [kubernetes]
+        titles:
+          en: Clusters
+          tr: Kümeler
+      - slug: affinity
+        order: 2
+        duration: 45
+        requires: [kubernetes]
+        titles:
+          en: Affinity
+          tr: Affinity
+      - slug: tools
+        order: 3
+        duration: 40
+        requires: [kubernetes]
+        titles:
+          en: Tools
+          tr: Araçlar
+
+  - slug: real-world
+    order: 8
+    titles:
+      en: Real Kubernetes
+      tr: Gerçek Kubernetes
+    summaries:
+      en: Broken clusters, and how you work out why.
+      tr: Bozuk kümeler ve sebebini nasıl çözersiniz.
+    labs:
+      - slug: troubleshooting
+        order: 1
+        duration: 60
+        requires: [kubernetes]
+        titles:
+          en: Troubleshooting
+          tr: Sorun Giderme
+      - slug: troubleshooting-2
+        order: 2
+        duration: 60
+        requires: [kubernetes]
+        titles:
+          en: Troubleshooting 2
+          tr: Sorun Giderme 2
+      - slug: troubleshooting-3
+        order: 3
+        duration: 60
+        requires: [kubernetes]
+        titles:
+          en: Troubleshooting 3
+          tr: Sorun Giderme 3

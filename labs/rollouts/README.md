@@ -1,3 +1,14 @@
+---
+title: Rollouts
+lang: en
+slug: rollouts
+section: cicd
+order: 4
+duration: 45
+requires: [kubernetes]
+status: needs-review
+upstream: labs/rollouts
+---
 # Updates with Staged Rollouts
 
 Pod controllers manage Pods for you - when you update the Pod spec the controller rolls out the change by removing old Pods and creating new ones. You'll do this all the time - every OS patch, library update and new feature will be an update. Depending on your app, config changes might need a rollout too.

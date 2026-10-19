@@ -1,3 +1,14 @@
+---
+title: Role-based Access Control (RBAC)
+lang: en
+slug: rbac
+section: advanced-modelling
+order: 1
+duration: 50
+requires: [kubernetes]
+status: needs-review
+upstream: labs/rbac
+---
 # Role-Based Access Control
 
 Kubernetes supports fine-grained access control, so you can decide who has permission to work with resources in your cluster, and what they can do with them.

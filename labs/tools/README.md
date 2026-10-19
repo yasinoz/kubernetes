@@ -1,3 +1,14 @@
+---
+title: Tools
+lang: en
+slug: tools
+section: production
+order: 3
+duration: 40
+requires: [kubernetes]
+status: needs-review
+upstream: labs/tools
+---
 # Tools
 
 Kubectl is great but sometimes you need something else to help you navigate your cluster.

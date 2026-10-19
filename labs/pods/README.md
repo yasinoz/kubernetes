@@ -1,3 +1,14 @@
+---
+title: Pods
+lang: en
+slug: pods
+section: core
+order: 2
+duration: 45
+requires: [kubernetes]
+status: needs-review
+upstream: labs/pods
+---
 # Running Containers in Pods
 
 The [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) is the basic unit of compute in Kubernetes. Pods run containers - it's their job to ensure the container keeps running.

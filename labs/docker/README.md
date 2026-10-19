@@ -1,3 +1,14 @@
+---
+title: Image Optimizing
+lang: en
+slug: docker
+section: cicd
+order: 1
+duration: 40
+requires: [kubernetes]
+status: needs-review
+upstream: labs/docker
+---
 # Docker Image Optimiziation
 
 The key to optimizing Docker builds is to use the right base images, and keep your application images small with multi-stage builds. Multi-stage builds use the standard Dockerfile syntax, with multiple stages separated with `FROM` commands. They give you a repeatable build with minimal dependencies.

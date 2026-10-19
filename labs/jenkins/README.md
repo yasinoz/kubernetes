@@ -1,3 +1,14 @@
+---
+title: Jenkins
+lang: en
+slug: jenkins
+section: cicd
+order: 5
+duration: 55
+requires: [kubernetes]
+status: needs-review
+upstream: labs/jenkins
+---
 # CI/CD with Jenkins
 
 Jenkins is a popular and powerful automation server. You can run Jenkins in your Kubernetes cluster as part of a deployment infrastructure to build and push Docker images, and update the running applications in your cluster.

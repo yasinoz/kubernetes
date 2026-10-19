@@ -1,3 +1,14 @@
+---
+title: ConfigMaps
+lang: en
+slug: configmaps
+section: modelling
+order: 1
+duration: 40
+requires: [kubernetes]
+status: needs-review
+upstream: labs/configmaps
+---
 # Configuring Apps with ConfigMaps
 
 There are two ways to store configuration settings in [ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/) - either as key-value pairs, which you'll surface as environment variables, or as text data which you'll surface as files in the container filesystem.

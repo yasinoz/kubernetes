@@ -1,3 +1,14 @@
+---
+title: Admission
+lang: en
+slug: admission
+section: advanced
+order: 2
+duration: 55
+requires: [kubernetes]
+status: needs-review
+upstream: labs/admission
+---
 # Controlling Admission
 
 Admission control is the process of allowing - or blocking - workloads from running in the cluster. You can use this to enforce your own rules. You might want to block all containers unless they're using an image from an approved registry, or block Pods which don't include resource limits in the spec.

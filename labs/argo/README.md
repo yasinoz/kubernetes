@@ -1,3 +1,14 @@
+---
+title: ArgoCD
+lang: en
+slug: argo
+section: cicd
+order: 6
+duration: 55
+requires: [kubernetes]
+status: needs-review
+upstream: labs/argo
+---
 # GitOps with ArgoCD
 
 GitOps turns the CI/CD approach on its head - instead of an external automation server pushing changes into the cluster, a tool inside the cluster monitors a Git repo and pulls in any changes.

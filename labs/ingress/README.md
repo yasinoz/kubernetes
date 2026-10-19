@@ -1,3 +1,14 @@
+---
+title: Ingress
+lang: en
+slug: ingress
+section: advanced-modelling
+order: 3
+duration: 50
+requires: [kubernetes]
+status: needs-review
+upstream: labs/ingress
+---
 # Ingress
 
 There are two parts to Ingress:

@@ -1,3 +1,14 @@
+---
+title: StatefulSets
+lang: en
+slug: statefulsets
+section: advanced-modelling
+order: 5
+duration: 50
+requires: [kubernetes]
+status: needs-review
+upstream: labs/statefulsets
+---
 # Modelling Stability with StatefulSets
 
 Kubernetes is a dynamic platform where objects are usually created in parallel and with random names. That's what happens with Pods when you create a Deployment, and it's a pattern which scales well.

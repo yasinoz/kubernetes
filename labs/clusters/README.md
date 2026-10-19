@@ -1,3 +1,14 @@
+---
+title: Clusters
+lang: en
+slug: clusters
+section: production
+order: 1
+duration: 45
+requires: [kubernetes]
+status: needs-review
+upstream: labs/clusters
+---
 # Kubernetes Clusters
 
 A single-node cluster is fine for a local environment, but a real cluster will always be multi-node for high availability and scale. 

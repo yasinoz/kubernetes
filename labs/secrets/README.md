@@ -1,3 +1,14 @@
+---
+title: Secrets
+lang: en
+slug: secrets
+section: modelling
+order: 2
+duration: 40
+requires: [kubernetes]
+status: needs-review
+upstream: labs/secrets
+---
 # Configuring Apps with Secrets
 
 ConfigMaps are flexible for pretty much any application config system, but they're not suitable for sensitive data. ConfigMap contents are visible in plain text to anyone who has access to your cluster.

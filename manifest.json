@@ -1,0 +1,892 @@
+{
+  "schema": 1,
+  "generated": "2026-10-19",
+  "track": {
+    "slug": "kubernetes",
+    "titles": {
+      "en": "Kubernetes Labs",
+      "tr": "Kubernetes Laboratuvarları"
+    },
+    "summaries": {
+      "en": "Hands-on Kubernetes labs, from Pods to production operations.",
+      "tr": "Pod'lardan üretim operasyonlarına kadar uygulamalı Kubernetes laboratuvarları."
+    }
+  },
+  "repo": {
+    "owner": "yasinoz",
+    "name": "kubernetes",
+    "branch": "main"
+  },
+  "raw_base": "https://raw.githubusercontent.com/yasinoz/kubernetes/main",
+  "web_base": "https://github.com/yasinoz/kubernetes/blob/main",
+  "setup": {
+    "en": "setup/README.md"
+  },
+  "languages": [
+    "en"
+  ],
+  "sections": [
+    {
+      "slug": "core",
+      "order": 1,
+      "titles": {
+        "en": "Core Kubernetes",
+        "tr": "Kubernetes Çekirdeği"
+      },
+      "summaries": {
+        "en": "The objects you use every day.",
+        "tr": "Her gün kullandığınız nesneler."
+      },
+      "labs": [
+        {
+          "slug": "nodes",
+          "order": 1,
+          "titles": {
+            "en": "Nodes",
+            "tr": "Düğümler"
+          },
+          "duration": 30,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/nodes",
+          "docs": {
+            "en": {
+              "readme": "labs/nodes/README.md",
+              "hints": "labs/nodes/hints.md",
+              "solution": "labs/nodes/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "pods",
+          "order": 2,
+          "titles": {
+            "en": "Pods",
+            "tr": "Pod'lar"
+          },
+          "duration": 45,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/pods",
+          "docs": {
+            "en": {
+              "readme": "labs/pods/README.md",
+              "hints": "labs/pods/hints.md",
+              "solution": "labs/pods/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "services",
+          "order": 3,
+          "titles": {
+            "en": "Services",
+            "tr": "Service'ler"
+          },
+          "duration": 45,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/services",
+          "docs": {
+            "en": {
+              "readme": "labs/services/README.md",
+              "hints": "labs/services/hints.md",
+              "solution": "labs/services/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "deployments",
+          "order": 4,
+          "titles": {
+            "en": "Deployments",
+            "tr": "Deployment'lar"
+          },
+          "duration": 45,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/deployments",
+          "docs": {
+            "en": {
+              "readme": "labs/deployments/README.md",
+              "hints": "labs/deployments/hints.md",
+              "solution": "labs/deployments/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "modelling",
+      "order": 2,
+      "titles": {
+        "en": "Application Modelling",
+        "tr": "Uygulama Modelleme"
+      },
+      "summaries": {
+        "en": "Configuration, secrets and storage.",
+        "tr": "Yapılandırma, gizli bilgiler ve depolama."
+      },
+      "labs": [
+        {
+          "slug": "configmaps",
+          "order": 1,
+          "titles": {
+            "en": "ConfigMaps",
+            "tr": "ConfigMap'ler"
+          },
+          "duration": 40,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/configmaps",
+          "docs": {
+            "en": {
+              "readme": "labs/configmaps/README.md",
+              "hints": "labs/configmaps/hints.md",
+              "solution": "labs/configmaps/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "secrets",
+          "order": 2,
+          "titles": {
+            "en": "Secrets",
+            "tr": "Secret'lar"
+          },
+          "duration": 40,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/secrets",
+          "docs": {
+            "en": {
+              "readme": "labs/secrets/README.md",
+              "hints": "labs/secrets/hints.md",
+              "solution": "labs/secrets/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "persistentvolumes",
+          "order": 3,
+          "titles": {
+            "en": "PersistentVolumes",
+            "tr": "PersistentVolume'lar"
+          },
+          "duration": 45,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/persistentvolumes",
+          "docs": {
+            "en": {
+              "readme": "labs/persistentvolumes/README.md",
+              "hints": "labs/persistentvolumes/hints.md",
+              "solution": "labs/persistentvolumes/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "namespaces",
+          "order": 4,
+          "titles": {
+            "en": "Namespaces",
+            "tr": "Namespace'ler"
+          },
+          "duration": 35,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/namespaces",
+          "docs": {
+            "en": {
+              "readme": "labs/namespaces/README.md",
+              "hints": "labs/namespaces/hints.md",
+              "solution": "labs/namespaces/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "advanced-modelling",
+      "order": 3,
+      "titles": {
+        "en": "Advanced Application Modelling",
+        "tr": "İleri Uygulama Modelleme"
+      },
+      "summaries": {
+        "en": "Access control and the workload types beyond Deployments.",
+        "tr": "Erişim denetimi ve Deployment dışındaki iş yükü tipleri."
+      },
+      "labs": [
+        {
+          "slug": "rbac",
+          "order": 1,
+          "titles": {
+            "en": "Role-based Access Control (RBAC)",
+            "tr": "Rol Tabanlı Erişim Denetimi (RBAC)"
+          },
+          "duration": 50,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/rbac",
+          "docs": {
+            "en": {
+              "readme": "labs/rbac/README.md",
+              "hints": "labs/rbac/hints.md",
+              "solution": "labs/rbac/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "daemonsets",
+          "order": 2,
+          "titles": {
+            "en": "DaemonSets",
+            "tr": "DaemonSet'ler"
+          },
+          "duration": 35,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/daemonsets",
+          "docs": {
+            "en": {
+              "readme": "labs/daemonsets/README.md",
+              "hints": "labs/daemonsets/hints.md",
+              "solution": "labs/daemonsets/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "ingress",
+          "order": 3,
+          "titles": {
+            "en": "Ingress",
+            "tr": "Ingress"
+          },
+          "duration": 50,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/ingress",
+          "docs": {
+            "en": {
+              "readme": "labs/ingress/README.md",
+              "hints": "labs/ingress/hints.md",
+              "solution": "labs/ingress/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "jobs",
+          "order": 4,
+          "titles": {
+            "en": "Jobs and CronJobs",
+            "tr": "Job ve CronJob'lar"
+          },
+          "duration": 40,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/jobs",
+          "docs": {
+            "en": {
+              "readme": "labs/jobs/README.md",
+              "hints": "labs/jobs/hints.md",
+              "solution": "labs/jobs/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "statefulsets",
+          "order": 5,
+          "titles": {
+            "en": "StatefulSets",
+            "tr": "StatefulSet'ler"
+          },
+          "duration": 50,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/statefulsets",
+          "docs": {
+            "en": {
+              "readme": "labs/statefulsets/README.md",
+              "hints": "labs/statefulsets/hints.md",
+              "solution": "labs/statefulsets/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "operating",
+      "order": 4,
+      "titles": {
+        "en": "Operating Kubernetes",
+        "tr": "Kubernetes'i İşletmek"
+      },
+      "summaries": {
+        "en": "Getting a cluster ready for real traffic.",
+        "tr": "Bir kümeyi gerçek trafiğe hazırlamak."
+      },
+      "labs": [
+        {
+          "slug": "productionizing",
+          "order": 1,
+          "titles": {
+            "en": "Production Readiness",
+            "tr": "Üretime Hazırlık"
+          },
+          "duration": 50,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/productionizing",
+          "docs": {
+            "en": {
+              "readme": "labs/productionizing/README.md",
+              "hints": "labs/productionizing/hints.md",
+              "solution": "labs/productionizing/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "monitoring",
+          "order": 2,
+          "titles": {
+            "en": "Monitoring",
+            "tr": "İzleme"
+          },
+          "duration": 45,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/monitoring",
+          "docs": {
+            "en": {
+              "readme": "labs/monitoring/README.md",
+              "hints": "labs/monitoring/hints.md",
+              "solution": "labs/monitoring/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "logging",
+          "order": 3,
+          "titles": {
+            "en": "Logging",
+            "tr": "Loglama"
+          },
+          "duration": 45,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/logging",
+          "docs": {
+            "en": {
+              "readme": "labs/logging/README.md",
+              "hints": "labs/logging/hints.md",
+              "solution": "labs/logging/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cicd",
+      "order": 5,
+      "titles": {
+        "en": "CI/CD",
+        "tr": "CI/CD"
+      },
+      "summaries": {
+        "en": "Building images and deploying them automatically.",
+        "tr": "İmaj derlemek ve otomatik dağıtmak."
+      },
+      "labs": [
+        {
+          "slug": "docker",
+          "order": 1,
+          "titles": {
+            "en": "Image Optimizing",
+            "tr": "İmaj Optimizasyonu"
+          },
+          "duration": 40,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/docker",
+          "docs": {
+            "en": {
+              "readme": "labs/docker/README.md",
+              "hints": "labs/docker/hints.md",
+              "solution": "labs/docker/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "buildkit",
+          "order": 2,
+          "titles": {
+            "en": "BuildKit",
+            "tr": "BuildKit"
+          },
+          "duration": 40,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/buildkit",
+          "docs": {
+            "en": {
+              "readme": "labs/buildkit/README.md",
+              "hints": "labs/buildkit/hints.md",
+              "solution": "labs/buildkit/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "helm",
+          "order": 3,
+          "titles": {
+            "en": "Helm",
+            "tr": "Helm"
+          },
+          "duration": 50,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/helm",
+          "docs": {
+            "en": {
+              "readme": "labs/helm/README.md",
+              "hints": "labs/helm/hints.md",
+              "solution": "labs/helm/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "rollouts",
+          "order": 4,
+          "titles": {
+            "en": "Rollouts",
+            "tr": "Rollout'lar"
+          },
+          "duration": 45,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/rollouts",
+          "docs": {
+            "en": {
+              "readme": "labs/rollouts/README.md",
+              "hints": "labs/rollouts/hints.md",
+              "solution": "labs/rollouts/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "jenkins",
+          "order": 5,
+          "titles": {
+            "en": "Jenkins",
+            "tr": "Jenkins"
+          },
+          "duration": 55,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/jenkins",
+          "docs": {
+            "en": {
+              "readme": "labs/jenkins/README.md",
+              "hints": "labs/jenkins/hints.md",
+              "solution": "labs/jenkins/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "argo",
+          "order": 6,
+          "titles": {
+            "en": "ArgoCD",
+            "tr": "ArgoCD"
+          },
+          "duration": 55,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/argo",
+          "docs": {
+            "en": {
+              "readme": "labs/argo/README.md",
+              "hints": "labs/argo/hints.md",
+              "solution": "labs/argo/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "advanced",
+      "order": 6,
+      "titles": {
+        "en": "Advanced Kubernetes",
+        "tr": "İleri Kubernetes"
+      },
+      "summaries": {
+        "en": "Network policy, admission control and operators.",
+        "tr": "Ağ politikası, admission control ve operator'lar."
+      },
+      "labs": [
+        {
+          "slug": "networkpolicy",
+          "order": 1,
+          "titles": {
+            "en": "NetworkPolicy",
+            "tr": "NetworkPolicy"
+          },
+          "duration": 45,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/networkpolicy",
+          "docs": {
+            "en": {
+              "readme": "labs/networkpolicy/README.md",
+              "hints": "labs/networkpolicy/hints.md",
+              "solution": "labs/networkpolicy/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "admission",
+          "order": 2,
+          "titles": {
+            "en": "Admission",
+            "tr": "Admission Control"
+          },
+          "duration": 55,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/admission",
+          "docs": {
+            "en": {
+              "readme": "labs/admission/README.md",
+              "hints": "labs/admission/hints.md",
+              "solution": "labs/admission/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "operators",
+          "order": 3,
+          "titles": {
+            "en": "Operators",
+            "tr": "Operator'lar"
+          },
+          "duration": 55,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/operators",
+          "docs": {
+            "en": {
+              "readme": "labs/operators/README.md",
+              "hints": "labs/operators/hints.md",
+              "solution": "labs/operators/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "production",
+      "order": 7,
+      "titles": {
+        "en": "Production Operations",
+        "tr": "Üretim Operasyonları"
+      },
+      "summaries": {
+        "en": "Cluster topology, scheduling and the tools you actually use.",
+        "tr": "Küme topolojisi, zamanlama ve gerçekten kullandığınız araçlar."
+      },
+      "labs": [
+        {
+          "slug": "clusters",
+          "order": 1,
+          "titles": {
+            "en": "Clusters",
+            "tr": "Kümeler"
+          },
+          "duration": 45,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/clusters",
+          "docs": {
+            "en": {
+              "readme": "labs/clusters/README.md",
+              "hints": "labs/clusters/hints.md",
+              "solution": "labs/clusters/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "affinity",
+          "order": 2,
+          "titles": {
+            "en": "Affinity",
+            "tr": "Affinity"
+          },
+          "duration": 45,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/affinity",
+          "docs": {
+            "en": {
+              "readme": "labs/affinity/README.md",
+              "hints": "labs/affinity/hints.md",
+              "solution": "labs/affinity/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "tools",
+          "order": 3,
+          "titles": {
+            "en": "Tools",
+            "tr": "Araçlar"
+          },
+          "duration": 40,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/tools",
+          "docs": {
+            "en": {
+              "readme": "labs/tools/README.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "real-world",
+      "order": 8,
+      "titles": {
+        "en": "Real Kubernetes",
+        "tr": "Gerçek Kubernetes"
+      },
+      "summaries": {
+        "en": "Broken clusters, and how you work out why.",
+        "tr": "Bozuk kümeler ve sebebini nasıl çözersiniz."
+      },
+      "labs": [
+        {
+          "slug": "troubleshooting",
+          "order": 1,
+          "titles": {
+            "en": "Troubleshooting",
+            "tr": "Sorun Giderme"
+          },
+          "duration": 60,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/troubleshooting",
+          "docs": {
+            "en": {
+              "readme": "labs/troubleshooting/README.md",
+              "hints": "labs/troubleshooting/hints.md",
+              "solution": "labs/troubleshooting/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "troubleshooting-2",
+          "order": 2,
+          "titles": {
+            "en": "Troubleshooting 2",
+            "tr": "Sorun Giderme 2"
+          },
+          "duration": 60,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/troubleshooting-2",
+          "docs": {
+            "en": {
+              "readme": "labs/troubleshooting-2/README.md",
+              "hints": "labs/troubleshooting-2/hints.md",
+              "solution": "labs/troubleshooting-2/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        },
+        {
+          "slug": "troubleshooting-3",
+          "order": 3,
+          "titles": {
+            "en": "Troubleshooting 3",
+            "tr": "Sorun Giderme 3"
+          },
+          "duration": 60,
+          "requires": [
+            "kubernetes"
+          ],
+          "status": "needs-review",
+          "path": "labs/troubleshooting-3",
+          "docs": {
+            "en": {
+              "readme": "labs/troubleshooting-3/README.md",
+              "hints": "labs/troubleshooting-3/hints.md",
+              "solution": "labs/troubleshooting-3/solution.md"
+            }
+          },
+          "langs": [
+            "en"
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total": 31,
+    "en": 31,
+    "tr": 0,
+    "by_status": {
+      "needs-review": 31
+    }
+  }
+}

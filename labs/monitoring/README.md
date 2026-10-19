@@ -1,3 +1,14 @@
+---
+title: Monitoring
+lang: en
+slug: monitoring
+section: operating
+order: 2
+duration: 45
+requires: [kubernetes]
+status: needs-review
+upstream: labs/monitoring
+---
 # Monitoring with Prometheus and Grafana
 
 Kubernetes can run hundreds of containers across dozens of servers. To keep track of them you run a monitoring server like [Prometheus](https://prometheus.io) which collects metrics from all of your containers. Prometheus stores the data and lets you query it - and you can visualize dashboards using [Grafana](https://grafana.com). 

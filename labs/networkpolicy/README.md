@@ -1,3 +1,14 @@
+---
+title: NetworkPolicy
+lang: en
+slug: networkpolicy
+section: advanced
+order: 1
+duration: 45
+requires: [kubernetes]
+status: needs-review
+upstream: labs/networkpolicy
+---
 # Securing Traffic with Network Policies
 
 Networking in Kubernetes is flat - Pods and Services have cluster-wide IP addresses and can communicate across different namespaces and nodes. 

@@ -1,3 +1,14 @@
+---
+title: Services
+lang: en
+slug: services
+section: core
+order: 3
+duration: 45
+requires: [kubernetes]
+status: needs-review
+upstream: labs/services
+---
 # Networking Pods with Services
 
 Every Pod has an IP address which other Pods in the cluster can reach, but that IP address only applies for the life of the Pod - replace the Pod and the new one will have a different IP address.

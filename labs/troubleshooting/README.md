@@ -1,3 +1,14 @@
+---
+title: Troubleshooting
+lang: en
+slug: troubleshooting
+section: real-world
+order: 1
+duration: 60
+requires: [kubernetes]
+status: needs-review
+upstream: labs/troubleshooting
+---
 # Troubleshooting Apps in Kubernetes
 
 You'll spend a lot of your time in Kubectl troubleshooting problems.
