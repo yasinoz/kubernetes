@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: admission-webhook
-          image: kiamol/ch16-admission-webhook
+          image: ghcr.io/yasinoz/kiamol/ch16-admission-webhook:latest
           env:
             - name: USE_HTTPS
               value: "true" 

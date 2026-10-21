@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: kiamol/ch20-todo-list
+          image: ghcr.io/yasinoz/kiamol/ch20-todo-list:latest
           volumeMounts:
             - name: config
               mountPath: "/app/config"

@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: adminer:4-standalone
+          image: ghcr.io/yasinoz/library/adminer:4-standalone
           args: ["php", "-S", "0.0.0.0:8080", "-t", "/var/www/html"]
           env:
           - name: ADMINER_DESIGN

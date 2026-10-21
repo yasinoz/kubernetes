@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: widgetario/products-db:postgres-replicated
+          image: ghcr.io/yasinoz/widgetario/products-db:postgres-replicated
           envFrom:
             - secretRef:
                 name: products-db-password

@@ -25,4 +25,4 @@ spec:
       serviceAccountName: no-token
       containers:
         - name: sleep-v2
-          image: kiamol/ch03-sleep
+          image: ghcr.io/yasinoz/kiamol/ch03-sleep:latest

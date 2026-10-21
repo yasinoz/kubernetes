@@ -5,7 +5,7 @@ The only changes you need to make here are to the `FROM` lines in the Dockerfile
 In my [sample solution](./solution/Dockerfile) I've changed both lines:
 
 ```
-FROM golang:1.27.2-alpine AS builder
+FROM ghcr.io/yasinoz/library/golang:1.27.2-alpine AS builder
 # ...
 FROM scratch
 ```

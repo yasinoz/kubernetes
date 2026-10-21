@@ -12,14 +12,14 @@ spec:
     spec:
       initContainers:
         - name: init-dp
-          image: kiamol/ch03-sleep
+          image: ghcr.io/yasinoz/kiamol/ch03-sleep:latest
           command: ['sh', '-c', 'echo $RANDOM > /init/dp']
           volumeMounts:
             - name: init
               mountPath: /init
       containers:
         - name: pi
-          image: kiamol/ch05-pi
+          image: ghcr.io/yasinoz/kiamol/ch05-pi:latest
           command: ['sh', '-c', 'dotnet Pi.Web.dll -m console -dp $(cat /init/dp)']
           volumeMounts:
             - name: init

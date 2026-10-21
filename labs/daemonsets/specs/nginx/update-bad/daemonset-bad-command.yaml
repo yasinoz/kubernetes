@@ -14,7 +14,7 @@ spec:
         app: nginx
     spec:
       containers:
-        - image: nginx:1.18-alpine
+        - image: ghcr.io/yasinoz/library/nginx:1.18-alpine
           name: nginx
           command: ['sh', '-c', "echo '<!DOCTYPE html><html><body><h1>Kubernetes Course Labs</h1></body></html>' > /usr/share/nginx/html/index.html"]
           volumeMounts:

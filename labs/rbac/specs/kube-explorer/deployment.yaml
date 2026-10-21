@@ -22,7 +22,7 @@ spec:
     spec:
       serviceAccountName: kube-explorer
       containers:
-        - image: kiamol/ch17-kube-explorer
+        - image: ghcr.io/yasinoz/kiamol/ch17-kube-explorer:latest
           name: web
           ports:
             - containerPort: 80

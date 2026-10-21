@@ -13,7 +13,7 @@ kind: MysqlCluster
 metadata:
   name: todo-db
 spec:
-  image: percona:5.7.35
+  image: ghcr.io/yasinoz/library/percona:5.7.35
   replicas: 1
   secretName: todo-db-secret  
   podSpec:    

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: diamol/ch02-hello-diamol-web
+        image: ghcr.io/yasinoz/diamol/ch02-hello-diamol-web:latest
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:

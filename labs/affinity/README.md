@@ -309,7 +309,7 @@ ___
 
 Docker images can be published with multi-architecture support, so one image tag actually has several variants which work on different CPU architectures or operating systems.
 
-This example is a simple web server which can run on Linux servers using Intel or Arm, or Windows servers on Intel: [diamol/ch02-hello-diamol-web](https://hub.docker.com/r/diamol/ch02-hello-diamol-web/tags).
+This example is a simple web server which can run on Linux servers using Intel or Arm, or Windows servers on Intel: [ghcr.io/yasinoz/diamol/ch02-hello-diamol-web:latest](https://hub.docker.com/r/diamol/ch02-hello-diamol-web/tags).
 
 You can check the OS and CPU architecture for your nodes:
 

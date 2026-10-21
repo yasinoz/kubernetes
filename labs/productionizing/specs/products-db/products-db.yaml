@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: db
-          image: widgetario/products-db:postgres
+          image: ghcr.io/yasinoz/widgetario/products-db:postgres
           readinessProbe:
             tcpSocket:
               port: 5432

@@ -10,7 +10,7 @@ metadata:
 spec:
   containers:
     - name: app
-      image: courselabs/bad-sleep
+      image: ghcr.io/yasinoz/courselabs/bad-sleep:latest
 ```
 
 Deploy it in the usual way with Kubectl:

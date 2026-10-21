@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: buildkitd
-      image: moby/buildkit:v0.9.0
+      image: ghcr.io/yasinoz/moby/buildkit:v0.9.0
       envFrom:
         - configMapRef:
             name: build-config

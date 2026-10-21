@@ -16,7 +16,7 @@ spec:
     spec: 
       containers:
         - name: app
-          image: nginx:1.18-alpine          
+          image: ghcr.io/yasinoz/library/nginx:1.18-alpine          
           volumeMounts:
             - name: config
               mountPath: "/etc/nginx/"

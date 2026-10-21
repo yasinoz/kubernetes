@@ -33,7 +33,7 @@ spec:
       serviceAccountName: jenkins
       containers:
         - name: jenkins
-          image: kiamol/ch11-jenkins:2.319.1
+          image: ghcr.io/yasinoz/kiamol/ch11-jenkins:2.319.1
           envFrom:
             - configMapRef:
                 name: build-config

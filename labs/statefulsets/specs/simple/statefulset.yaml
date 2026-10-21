@@ -18,7 +18,7 @@ spec:
     spec: 
       initContainers:
         - name: wait-service
-          image: kiamol/ch03-sleep
+          image: ghcr.io/yasinoz/kiamol/ch03-sleep:latest
           env:
             - name: PRIMARY_NAME
               value: simple-statefulset-0
@@ -29,7 +29,7 @@ spec:
             - name: scripts
               mountPath: "/scripts"
         - name: create-html
-          image: kiamol/ch03-sleep
+          image: ghcr.io/yasinoz/kiamol/ch03-sleep:latest
           command: ['/scripts/create-html.sh']
           volumeMounts:
             - name: scripts
@@ -38,7 +38,7 @@ spec:
               mountPath: /html
       containers:
         - name: app
-          image: nginx:1.18-alpine          
+          image: ghcr.io/yasinoz/library/nginx:1.18-alpine          
           volumeMounts:
             - name: html
               mountPath: /usr/share/nginx/html

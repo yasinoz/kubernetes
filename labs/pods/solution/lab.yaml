@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
     - name: app
-      image: courselabs/bad-sleep
+      image: ghcr.io/yasinoz/courselabs/bad-sleep:latest

@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: nginx:1.23-alpine
+        image: ghcr.io/yasinoz/library/nginx:1.23-alpine
         ports:
         - containerPort: 80
         env:

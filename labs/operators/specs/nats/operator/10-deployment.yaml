@@ -18,7 +18,7 @@ spec:
       serviceAccountName: nats-operator
       containers:
       - name: nats-operator
-        image: courselabs/nats-operator:v0.8.3
+        image: ghcr.io/yasinoz/courselabs/nats-operator:v0.8.3
         imagePullPolicy: IfNotPresent
         args:
         - nats-operator

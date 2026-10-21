@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: sixeyed/whoami:24.07
+          image: ghcr.io/yasinoz/sixeyed/whoami:24.07
       tolerations:
         - key: "disk"
           operator: "Equal"

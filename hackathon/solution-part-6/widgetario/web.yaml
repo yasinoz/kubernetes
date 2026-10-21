@@ -92,14 +92,14 @@ spec:
         runAsGroup: 3000
       containers:
         - name: logger
-          image: alpine:3.24
+          image: ghcr.io/yasinoz/library/alpine:3.24
           command: ['sh', '-c', 'tail -f /logs-ro/app.log'] 
           volumeMounts:
             - name: logs
               mountPath: /logs-ro
               readOnly: true
         - name: app
-          image: widgetario/web:21.03
+          image: ghcr.io/yasinoz/widgetario/web:21.03
           ports:
             - containerPort: 5001
               name: http

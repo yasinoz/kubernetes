@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: kiamol/ch03-numbers-api
+          image: ghcr.io/yasinoz/kiamol/ch03-numbers-api:latest
           ports:
             - containerPort: 80
               name: http

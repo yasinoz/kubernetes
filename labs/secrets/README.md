@@ -45,7 +45,7 @@ In the Pod spec you add a reference:
 spec:
   containers:
     - name: app
-      image: sixeyed/configurable:21.04
+      image: ghcr.io/yasinoz/sixeyed/configurable:21.04
       envFrom:
         - secretRef:
             name: configurable-secret-env

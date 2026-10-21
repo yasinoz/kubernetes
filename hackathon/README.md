@@ -56,7 +56,7 @@ kubectl apply -f hackathon/solution-part-1/products-db -f hackathon/solution-par
 
 Well done! Seems pretty straightforward when you look at the YAML, but now we need to go to the next stage and stop using the default configuraion in the Docker images.
 
-Why? If you run `docker image inspect widgetario/products-db:21.03` you'll see the database password is in the default environment variables, so if someone manages to get the image they'll know our production password.
+Why? If you run `docker image inspect ghcr.io/yasinoz/widgetario/products-db:21.03` you'll see the database password is in the default environment variables, so if someone manages to get the image they'll know our production password.
 
 Also the front-end team are experimenting with a new dark mode, and they want to quickly turn it on and off with a config setting.
 
@@ -106,7 +106,7 @@ The Stock API has a nice caching feature: when it fetches data from the database
 
 And the DB team are keen to spend more time looking at running Postgres in Kubernetes, with persistent storage for the data. They've built an alternative Docker image which can run a replicated database as a primary and a secondary.
 
-* this is the `widgetario/products-db:postgres-replicated` image, and luckily we've already used it in this course so you can find a good sample to start with
+* this is the `ghcr.io/yasinoz/widgetario/products-db:postgres-replicated` image, and luckily we've already used it in this course so you can find a good sample to start with
 
 * the replication setup needs the same Postgres password set in two different environment variables
 

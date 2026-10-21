@@ -15,7 +15,7 @@ spec:
       serviceAccountName: fluent-bit
       containers:
       - name: fluent-bit
-        image: fluent/fluent-bit:1.8.3
+        image: ghcr.io/yasinoz/fluent/fluent-bit:1.8.3
         volumeMounts:
         - name: fluent-bit-config
           mountPath: /fluent-bit/etc/

@@ -21,11 +21,11 @@ spec:
     spec:
       initContainers:
         - name: wait
-          image: kiamol/ch03-sleep
+          image: ghcr.io/yasinoz/kiamol/ch03-sleep:latest
           command: ['sh', '-c', 'sleep 3s']
       containers:
         - name: web
-          image: kiamol/ch09-vweb:v2
+          image: ghcr.io/yasinoz/kiamol/ch09-vweb:v2
           ports:
             - name: http
               containerPort: 80

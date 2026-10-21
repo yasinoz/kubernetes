@@ -15,13 +15,13 @@ spec:
     spec:
       initContainers:
         - name: init-html
-          image: kiamol/ch03-sleep
+          image: ghcr.io/yasinoz/kiamol/ch03-sleep:latest
           command: ['sh', '-c', "echo '<!DOCTYPE html><html><body><h1>I will only run on nodes labelled ip=public</h1></body></html>' > /html/index.html"]
           volumeMounts:
             - name: html
               mountPath: /html
       containers:
-        - image: nginx:1.18-alpine
+        - image: ghcr.io/yasinoz/library/nginx:1.18-alpine
           name: nginx
           volumeMounts:
             - name: html

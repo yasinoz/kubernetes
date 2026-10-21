@@ -229,7 +229,7 @@ To make that work you'll need to fix the chart templates.
 
 If you get that far, then you can experiment with automatic rollbacks - which Helm does support. 
 
-When the green release is live, try updating the blue release to use the bad `kiamol/ch09-vweb:v3` image - using one Helm command which will rollback if the update isn't successful within 30 seconds.
+When the green release is live, try updating the blue release to use the bad `ghcr.io/yasinoz/kiamol/ch09-vweb:v3` image - using one Helm command which will rollback if the update isn't successful within 30 seconds.
 
 > Stuck? Try [hints](hints.md) or check the [solution](solution.md).
 ___

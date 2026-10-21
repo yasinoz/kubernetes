@@ -62,7 +62,7 @@ metadata:
 spec:
   containers:
     - name: app
-      image: sixeyed/whoami:24.07
+      image: ghcr.io/yasinoz/sixeyed/whoami:24.07
 ```
 
 Other annotations can be used to configure the port and HTTP path Prometheus should use to collect metrics.

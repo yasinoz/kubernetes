@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: kiamol/ch20-todo-save-handler
+          image: ghcr.io/yasinoz/kiamol/ch20-todo-save-handler:latest
           volumeMounts:
             - name: config
               mountPath: "/app/config"

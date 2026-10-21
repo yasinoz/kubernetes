@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
         - name: gogs
-          image: kiamol/ch11-gogs
+          image: ghcr.io/yasinoz/kiamol/ch11-gogs:latest
           ports:
             - name: gogs
               containerPort: 3000

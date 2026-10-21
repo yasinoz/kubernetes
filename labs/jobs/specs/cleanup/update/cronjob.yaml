@@ -23,7 +23,7 @@ spec:
           restartPolicy: Never
           containers:
           - name: app
-            image: sixeyed/kubectl:1.21.0
+            image: ghcr.io/yasinoz/sixeyed/kubectl:1.21.0
             command: ['sh', '-c', '/scripts/run.sh']
             env:
             - name: CLEANUP_NAMESPACE

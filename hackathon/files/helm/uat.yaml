@@ -5,22 +5,22 @@ includeLiveness: true
 includeResources: false
 
 # Products API ("papi")
-papiImage: widgetario/products-api:21.03
+papiImage: ghcr.io/yasinoz/widgetario/products-api:21.03
 papiReplicaCount: 1
 
 # Products database ("pdb")
-pdbImage: widgetario/products-db-replicated:21.03
+pdbImage: ghcr.io/yasinoz/widgetario/products-db-replicated:21.03
 pdbReplicaCount: 2
 pdbStorageSize: 50Mi
 pdbUsername: postgres
 pdbPassword: h4kka7h_n
 
 # Stock API ("sapi")
-sapiImage: widgetario/stock-api:21.03
+sapiImage: ghcr.io/yasinoz/widgetario/stock-api:21.03
 sapiReplicaCount: 3
 
 # Website ("web")
-webLoggerImage: alpine:3.24
+webLoggerImage: ghcr.io/yasinoz/library/alpine:3.24
 webReplicaCount: 2
 webTheme: dark
 webImage: widgetario/web:21.03-v2

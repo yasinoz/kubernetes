@@ -1,6 +1,6 @@
 services:
 
   bad-sleep:
-    image: courselabs/bad-sleep
+    image: ghcr.io/yasinoz/courselabs/bad-sleep:latest
     build:
       context: ./bad-sleep

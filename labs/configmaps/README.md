@@ -43,7 +43,7 @@ In the Pod spec you add a reference:
 spec:
   containers:
     - name: app
-      image: sixeyed/configurable:21.04
+      image: ghcr.io/yasinoz/sixeyed/configurable:21.04
       envFrom:
         - configMapRef:
             name: configurable-env
@@ -81,7 +81,7 @@ In the Pod spec you can load all the values into the container filesystem as vol
 spec:
   containers:
     - name: app
-      image: sixeyed/configurable:21.04
+      image: ghcr.io/yasinoz/sixeyed/configurable:21.04
       volumeMounts:
         - name: config-override
           mountPath: "/app/config"
@@ -109,7 +109,7 @@ The demo app for this lab has the logic to merge config from multiple sources.
 Defaults are built into the `appsettings.json` file inside the Docker image - run a Pod with no config applied to see the defaults:
 
 ```
-kubectl run configurable --image=sixeyed/configurable:21.04 --labels='kubernetes.courselabs.co=configmaps'
+kubectl run configurable --image=ghcr.io/yasinoz/sixeyed/configurable:21.04 --labels='kubernetes.courselabs.co=configmaps'
 
 kubectl wait --for=condition=Ready pod configurable
 

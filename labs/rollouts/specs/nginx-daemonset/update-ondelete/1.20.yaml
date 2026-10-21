@@ -16,5 +16,5 @@ spec:
         app: nginx
     spec:
       containers:
-        - image: nginx:1.20-alpine
+        - image: ghcr.io/yasinoz/library/nginx:1.20-alpine
           name: nginx

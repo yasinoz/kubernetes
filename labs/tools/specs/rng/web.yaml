@@ -39,7 +39,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: kiamol/ch03-numbers-web
+          image: ghcr.io/yasinoz/kiamol/ch03-numbers-web:latest
           env:
           - name: RngApi__Url
             value: http://numbers-api.rng.svc.cluster.local/rng

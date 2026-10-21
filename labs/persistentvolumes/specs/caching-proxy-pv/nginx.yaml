@@ -17,7 +17,7 @@ spec:
         storage: local
     spec:
       containers:
-        - image: nginx:1.18-alpine
+        - image: ghcr.io/yasinoz/library/nginx:1.18-alpine
           name: nginx
           ports:
             - containerPort: 80

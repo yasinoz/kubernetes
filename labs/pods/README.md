@@ -33,7 +33,7 @@ metadata:
 spec:
   containers:
     - name: app
-      image: sixeyed/whoami:24.07
+      image: ghcr.io/yasinoz/sixeyed/whoami:24.07
 ```
 
 Every Kubernetes resource requires these four fields:
@@ -207,7 +207,7 @@ kubectl exec sleep -- curl -s $ip
 
 Pods are an abstraction over containers. They wrap the container and monitor it - if the app crashes the Pod restarts, creating a new container to keep your app running. This is the first layer of high-availability Kubernetes provides.
 
-You can see this in action with a badly-configured app, where the container keeps exiting. Write your own Pod spec to run a container from the Docker Hub image `courselabs/bad-sleep`. Deploy your spec and watch the Pod - what happens after about 30 seconds? And after a couple of minutes?
+You can see this in action with a badly-configured app, where the container keeps exiting. Write your own Pod spec to run a container from the Docker Hub image `ghcr.io/yasinoz/courselabs/bad-sleep:latest`. Deploy your spec and watch the Pod - what happens after about 30 seconds? And after a couple of minutes?
 
 Kubernetes will keep trying to make the Pod work, so you can remove it when you're done.
 

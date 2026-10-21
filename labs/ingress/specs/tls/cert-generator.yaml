@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: app
-      image: kiamol/ch15-cert-generator
+      image: ghcr.io/yasinoz/kiamol/ch15-cert-generator:latest
       env:
         - name: HOST_NAME
           value: default.local

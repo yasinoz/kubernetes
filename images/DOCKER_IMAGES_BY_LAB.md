@@ -7,16 +7,16 @@ This document provides a comprehensive mapping of Docker images used in each lab
 The following Docker images are used across all labs:
 
 ### Official/Third-Party Images
-- `adminer:4-standalone` - Database management UI
-- `alpine:3.24`, `alpine:3.24` - Base Alpine Linux images
-- `busybox:1.34.0` - Lightweight utilities
-- `fluent/fluent-bit:1.8.3` - Log forwarding
+- `ghcr.io/yasinoz/library/adminer:4-standalone` - Database management UI
+- `ghcr.io/yasinoz/library/alpine:3.24`, `ghcr.io/yasinoz/library/alpine:3.24` - Base Alpine Linux images
+- `ghcr.io/yasinoz/library/busybox:1.34.0` - Lightweight utilities
+- `ghcr.io/yasinoz/fluent/fluent-bit:1.8.3` - Log forwarding
 - `gcr.io/cadvisor/cadvisor:v0.45.0` - Container metrics
 - `ghcr.io/dexidp/dex:v2.44.0` - OpenID Connect provider
-- `moby/buildkit:v0.9.0` - Docker build toolkit
-- `nginx:1.18-alpine`, `nginx:1.20-alpine`, `nginx:1.23-alpine` - Web server
-- `openpolicyagent/gatekeeper:v3.23.1` - Policy enforcement
-- `percona:5.7.35` - MySQL variant
+- `ghcr.io/yasinoz/moby/buildkit:v0.9.0` - Docker build toolkit
+- `ghcr.io/yasinoz/library/nginx:1.18-alpine`, `ghcr.io/yasinoz/library/nginx:1.20-alpine`, `ghcr.io/yasinoz/library/nginx:1.23-alpine` - Web server
+- `ghcr.io/yasinoz/openpolicyagent/gatekeeper:v3.23.1` - Policy enforcement
+- `ghcr.io/yasinoz/library/percona:5.7.35` - MySQL variant
 - `quay.io/argoproj/argocd:v3.5.5` - GitOps tool
 - `quay.io/jetstack/cert-manager-cainjector:v1.5.3` - Certificate management
 - `quay.io/jetstack/cert-manager-controller:v1.5.3` - Certificate management
@@ -29,8 +29,8 @@ The following Docker images are used across all labs:
 - `k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.2.0` - Cluster metrics
 - `k8s.gcr.io/metrics-server-amd64:v0.3.6` - Resource metrics
 - `k8s.gcr.io/metrics-server/metrics-server:v0.6.1` - Resource metrics
-- `kubernetesui/dashboard:v2.3.1` - Kubernetes dashboard
-- `kubernetesui/metrics-scraper:v1.0.6` - Dashboard metrics
+- `ghcr.io/yasinoz/kubernetesui/dashboard:v2.3.1` - Kubernetes dashboard
+- `ghcr.io/yasinoz/kubernetesui/metrics-scraper:v1.0.6` - Dashboard metrics
 - `registry.k8s.io/metrics-server/metrics-server:v0.8.0` - Resource metrics
 
 ### Calico Network Policy Images
@@ -40,39 +40,39 @@ The following Docker images are used across all labs:
 - `calico/pod2daemon-flexvol:v3.15.0`
 
 ### Course/Tutorial Images
-- `courselabs/bad-sleep` - Demonstration of failed container
+- `ghcr.io/yasinoz/courselabs/bad-sleep:latest` - Demonstration of failed container
 - `docker.elastic.co/elasticsearch/elasticsearch:9.5.5` - Search engine
-- `courselabs/fulfilment-api@sha256:ee65224fb578b2ff909358edb1e488e25dd8fafdac668bba97d26825a9b8278c` - Demo API
-- `courselabs/fulfilment-processor@sha256:578bc38424a1891bbe613925a04e27461fd6cad36de31a2efdbab0acb5d19b26` - Demo processor
-- `grafana/grafana:13.2.4` - Metrics visualization
+- `ghcr.io/yasinoz/courselabs/fulfilment-api:sha-ee65224fb578` - Demo API
+- `ghcr.io/yasinoz/courselabs/fulfilment-processor:sha-578bc38424a1` - Demo processor
+- `ghcr.io/yasinoz/grafana/grafana:13.2.4` - Metrics visualization
 - `courselabs/keda-web:latest` - KEDA demo web app
 - `courselabs/keda-worker:latest` - KEDA demo worker
 - `docker.elastic.co/kibana/kibana:9.5.5` - Log visualization
-- `courselabs/nats-operator:v0.8.3` - NATS messaging operator
-- `prom/prometheus:v3.15.0` - Metrics collection
-- `diamol/ch02-hello-diamol-web` - Demo web app
-- `kiamol/ch03-numbers-api` - Demo API
-- `kiamol/ch03-numbers-web` - Demo web app
-- `kiamol/ch03-sleep` - Sleep container for testing
-- `kiamol/ch05-pi` - Pi calculation app
+- `ghcr.io/yasinoz/courselabs/nats-operator:v0.8.3` - NATS messaging operator
+- `ghcr.io/yasinoz/prom/prometheus:v3.15.0` - Metrics collection
+- `ghcr.io/yasinoz/diamol/ch02-hello-diamol-web:latest` - Demo web app
+- `ghcr.io/yasinoz/kiamol/ch03-numbers-api:latest` - Demo API
+- `ghcr.io/yasinoz/kiamol/ch03-numbers-web:latest` - Demo web app
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container for testing
+- `ghcr.io/yasinoz/kiamol/ch05-pi:latest` - Pi calculation app
 - `kiamol/ch05-pi-app` - Pi calculation app variant
-- `kiamol/ch09-vweb:v1`, `v2`, `v3` - Versioned web app
-- `kiamol/ch11-gogs` - Git server
-- `kiamol/ch11-jenkins:2.319.1` - CI/CD server
-- `kiamol/ch14-access-log` - Access log service
-- `kiamol/ch14-image-gallery` - Image gallery app
-- `kiamol/ch14-image-of-the-day` - Image API
-- `kiamol/ch15-cert-generator` - Certificate generation
-- `kiamol/ch16-admission-webhook` - Admission webhook
-- `kiamol/ch17-kube-explorer` - Kubernetes explorer
-- `kiamol/ch17-user-cert-generator` - User certificate generator
-- `kiamol/ch20-todo-list` - Todo list app
-- `kiamol/ch20-todo-save-handler` - Todo save handler
-- `sixeyed/configurable:21.04` - Configurable demo app
-- `sixeyed/kubectl:1.21.0` - Kubectl tool
-- `sixeyed/whoami:24.07`, `sixeyed/whoami:24.07` - Identity service
-- `widgetario/products-db:postgres` - Products database
-- `widgetario/products-db:postgres-replicated` - Replicated products database
+- `ghcr.io/yasinoz/kiamol/ch09-vweb:v1`, `v2`, `v3` - Versioned web app
+- `ghcr.io/yasinoz/kiamol/ch11-gogs:latest` - Git server
+- `ghcr.io/yasinoz/kiamol/ch11-jenkins:2.319.1` - CI/CD server
+- `ghcr.io/yasinoz/kiamol/ch14-access-log:latest` - Access log service
+- `ghcr.io/yasinoz/kiamol/ch14-image-gallery:latest` - Image gallery app
+- `ghcr.io/yasinoz/kiamol/ch14-image-of-the-day:latest` - Image API
+- `ghcr.io/yasinoz/kiamol/ch15-cert-generator:latest` - Certificate generation
+- `ghcr.io/yasinoz/kiamol/ch16-admission-webhook:latest` - Admission webhook
+- `ghcr.io/yasinoz/kiamol/ch17-kube-explorer:latest` - Kubernetes explorer
+- `ghcr.io/yasinoz/kiamol/ch17-user-cert-generator:latest` - User certificate generator
+- `ghcr.io/yasinoz/kiamol/ch20-todo-list:latest` - Todo list app
+- `ghcr.io/yasinoz/kiamol/ch20-todo-save-handler:latest` - Todo save handler
+- `ghcr.io/yasinoz/sixeyed/configurable:21.04` - Configurable demo app
+- `ghcr.io/yasinoz/sixeyed/kubectl:1.21.0` - Kubectl tool
+- `ghcr.io/yasinoz/sixeyed/whoami:24.07`, `ghcr.io/yasinoz/sixeyed/whoami:24.07` - Identity service
+- `ghcr.io/yasinoz/widgetario/products-db:postgres` - Products database
+- `ghcr.io/yasinoz/widgetario/products-db:postgres-replicated` - Replicated products database
 
 ### Template Variables
 - `access-log` - Template variable
@@ -82,44 +82,44 @@ The following Docker images are used across all labs:
 ## Images by Lab
 
 ### admission
-- `kiamol/ch05-pi` - Pi calculation demo
-- `kiamol/ch03-sleep` - Sleep container
-- `kiamol/ch14-access-log` - Access logging
-- `kiamol/ch14-image-gallery` - Image gallery
-- `kiamol/ch14-image-of-the-day` - Image API
-- `kiamol/ch16-admission-webhook` - Admission webhook
-- `openpolicyagent/gatekeeper:v3.23.1` - Policy enforcement
+- `ghcr.io/yasinoz/kiamol/ch05-pi:latest` - Pi calculation demo
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
+- `ghcr.io/yasinoz/kiamol/ch14-access-log:latest` - Access logging
+- `ghcr.io/yasinoz/kiamol/ch14-image-gallery:latest` - Image gallery
+- `ghcr.io/yasinoz/kiamol/ch14-image-of-the-day:latest` - Image API
+- `ghcr.io/yasinoz/kiamol/ch16-admission-webhook:latest` - Admission webhook
+- `ghcr.io/yasinoz/openpolicyagent/gatekeeper:v3.23.1` - Policy enforcement
 - `quay.io/jetstack/cert-manager-*:v1.5.3` - Certificate management
-- `sixeyed/whoami:24.07` - Identity service
+- `ghcr.io/yasinoz/sixeyed/whoami:24.07` - Identity service
 
 ### affinity
-- `diamol/ch02-hello-diamol-web` - Multi-arch demo
-- `sixeyed/whoami:24.07` - Identity service
+- `ghcr.io/yasinoz/diamol/ch02-hello-diamol-web:latest` - Multi-arch demo
+- `ghcr.io/yasinoz/sixeyed/whoami:24.07` - Identity service
 
 ### argo
 - `ghcr.io/dexidp/dex:v2.44.0` - OIDC provider
-- `kiamol/ch11-gogs` - Git server
+- `ghcr.io/yasinoz/kiamol/ch11-gogs:latest` - Git server
 - `quay.io/argoproj/argocd:v3.5.5` - ArgoCD
 - `redis:8.10.2-alpine` - Redis cache
 - Template variables: `access-log`, `image-gallery`, `image-of-the-day`
 
 ### buildkit
-- `kiamol/ch03-sleep` - Sleep container
-- `moby/buildkit:v0.9.0` - Build toolkit
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
+- `ghcr.io/yasinoz/moby/buildkit:v0.9.0` - Build toolkit
 
 ### clusters
 - `quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.33.0` - Ingress controller
-- `sixeyed/whoami:24.07` - Identity service
+- `ghcr.io/yasinoz/sixeyed/whoami:24.07` - Identity service
 
 ### configmaps
-- `sixeyed/configurable:21.04` - Configurable app demonstrating ConfigMaps
+- `ghcr.io/yasinoz/sixeyed/configurable:21.04` - Configurable app demonstrating ConfigMaps
 
 ### daemonsets
-- `nginx:1.18-alpine` - Web server
-- `kiamol/ch03-sleep` - Sleep container
+- `ghcr.io/yasinoz/library/nginx:1.18-alpine` - Web server
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
 
 ### deployments
-- `sixeyed/whoami:24.07` - Identity service for deployment demos
+- `ghcr.io/yasinoz/sixeyed/whoami:24.07` - Identity service for deployment demos
 
 ### docker
 - No Kubernetes manifests (Docker-only lab)
@@ -128,23 +128,23 @@ The following Docker images are used across all labs:
 - No fixed images (uses Helm templates)
 
 ### ingress
-- `kiamol/ch05-pi` - Pi calculation
-- `nginx:1.18-alpine` - Default backend
+- `ghcr.io/yasinoz/kiamol/ch05-pi:latest` - Pi calculation
+- `ghcr.io/yasinoz/library/nginx:1.18-alpine` - Default backend
 - `k8s.gcr.io/ingress-nginx/controller:v1.2.0` - Ingress controller
-- `kiamol/ch15-cert-generator` - TLS certificate generation
-- `sixeyed/configurable:21.04` - Configurable app
-- `sixeyed/whoami:24.07` - Identity service
+- `ghcr.io/yasinoz/kiamol/ch15-cert-generator:latest` - TLS certificate generation
+- `ghcr.io/yasinoz/sixeyed/configurable:21.04` - Configurable app
+- `ghcr.io/yasinoz/sixeyed/whoami:24.07` - Identity service
 
 ### jenkins
-- `kiamol/ch11-gogs` - Git server
-- `kiamol/ch11-jenkins:2.319.1` - Jenkins CI/CD
-- `moby/buildkit:v0.9.0` - Build toolkit
+- `ghcr.io/yasinoz/kiamol/ch11-gogs:latest` - Git server
+- `ghcr.io/yasinoz/kiamol/ch11-jenkins:2.319.1` - Jenkins CI/CD
+- `ghcr.io/yasinoz/moby/buildkit:v0.9.0` - Build toolkit
 
 ### jobs
-- `alpine:3.24` - Base image for jobs
-- `kiamol/ch03-sleep` - Sleep container
-- `kiamol/ch05-pi` - Pi calculation
-- `sixeyed/kubectl:1.21.0` - Kubectl for CronJobs
+- `ghcr.io/yasinoz/library/alpine:3.24` - Base image for jobs
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
+- `ghcr.io/yasinoz/kiamol/ch05-pi:latest` - Pi calculation
+- `ghcr.io/yasinoz/sixeyed/kubectl:1.21.0` - Kubectl for CronJobs
 
 ### keda
 - `courselabs/keda-web:latest` - KEDA demo web app
@@ -155,97 +155,97 @@ The following Docker images are used across all labs:
 ### logging
 - `docker.elastic.co/elasticsearch/elasticsearch:9.5.5` - Log storage
 - `docker.elastic.co/kibana/kibana:9.5.5` - Log visualization
-- `alpine:3.24` - Sidecar container
-- `courselabs/fulfilment-api@sha256:ee65224fb578b2ff909358edb1e488e25dd8fafdac668bba97d26825a9b8278c` - Demo API
-- `courselabs/fulfilment-processor@sha256:578bc38424a1891bbe613925a04e27461fd6cad36de31a2efdbab0acb5d19b26` - Demo processor
-- `fluent/fluent-bit:1.8.3` - Log forwarding
-- `kiamol/ch03-sleep` - Sleep container
+- `ghcr.io/yasinoz/library/alpine:3.24` - Sidecar container
+- `ghcr.io/yasinoz/courselabs/fulfilment-api:sha-ee65224fb578` - Demo API
+- `ghcr.io/yasinoz/courselabs/fulfilment-processor:sha-578bc38424a1` - Demo processor
+- `ghcr.io/yasinoz/fluent/fluent-bit:1.8.3` - Log forwarding
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
 
 ### monitoring
-- `grafana/grafana:13.2.4` - Metrics visualization
+- `ghcr.io/yasinoz/grafana/grafana:13.2.4` - Metrics visualization
 - `k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.2.0` - Cluster metrics
-- `courselabs/fulfilment-processor@sha256:578bc38424a1891bbe613925a04e27461fd6cad36de31a2efdbab0acb5d19b26` - Demo app
-- `prom/prometheus:v3.15.0` - Metrics collection
+- `ghcr.io/yasinoz/courselabs/fulfilment-processor:sha-578bc38424a1` - Demo app
+- `ghcr.io/yasinoz/prom/prometheus:v3.15.0` - Metrics collection
 - `gcr.io/cadvisor/cadvisor:v0.45.0` - Container metrics
 
 ### namespaces
-- `kiamol/ch05-pi` - Pi calculation
-- `nginx:1.18-alpine` - Web server
-- `kiamol/ch03-sleep` - Sleep container
-- `sixeyed/configurable:21.04` - Configurable app
-- `sixeyed/whoami:24.07` - Identity service
+- `ghcr.io/yasinoz/kiamol/ch05-pi:latest` - Pi calculation
+- `ghcr.io/yasinoz/library/nginx:1.18-alpine` - Web server
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
+- `ghcr.io/yasinoz/sixeyed/configurable:21.04` - Configurable app
+- `ghcr.io/yasinoz/sixeyed/whoami:24.07` - Identity service
 
 ### networkpolicy
 - Calico CNI images (`calico/*:v3.15.0`)
-- `kiamol/ch03-sleep` - Sleep container
-- `kiamol/ch14-access-log` - Access logging
-- `kiamol/ch14-image-gallery` - Image gallery
-- `kiamol/ch14-image-of-the-day` - Image API
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
+- `ghcr.io/yasinoz/kiamol/ch14-access-log:latest` - Access logging
+- `ghcr.io/yasinoz/kiamol/ch14-image-gallery:latest` - Image gallery
+- `ghcr.io/yasinoz/kiamol/ch14-image-of-the-day:latest` - Image API
 
 ### nodes
 - No container images (node management lab)
 
 ### operators
-- `busybox:1.34.0` - Init container
-- `courselabs/nats-operator:v0.8.3` - NATS operator
+- `ghcr.io/yasinoz/library/busybox:1.34.0` - Init container
+- `ghcr.io/yasinoz/courselabs/nats-operator:v0.8.3` - NATS operator
 - MySQL operator images (`docker.io/bitpoke/mysql-operator*`)
-- `kiamol/ch20-todo-list` - Todo app
-- `kiamol/ch20-todo-save-handler` - Todo handler
-- `percona:5.7.35` - MySQL
+- `ghcr.io/yasinoz/kiamol/ch20-todo-list:latest` - Todo app
+- `ghcr.io/yasinoz/kiamol/ch20-todo-save-handler:latest` - Todo handler
+- `ghcr.io/yasinoz/library/percona:5.7.35` - MySQL
 
 ### persistentvolumes
-- `kiamol/ch05-pi` - Pi calculation
-- `nginx:1.18-alpine` - Web server with caching
-- `kiamol/ch03-sleep` - Sleep container
+- `ghcr.io/yasinoz/kiamol/ch05-pi:latest` - Pi calculation
+- `ghcr.io/yasinoz/library/nginx:1.18-alpine` - Web server with caching
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
 
 ### pods
-- `courselabs/bad-sleep` - Failing pod demo
-- `kiamol/ch03-sleep` - Sleep container
-- `sixeyed/whoami:24.07` - Identity service
+- `ghcr.io/yasinoz/courselabs/bad-sleep:latest` - Failing pod demo
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
+- `ghcr.io/yasinoz/sixeyed/whoami:24.07` - Identity service
 
 ### productionizing
-- `kiamol/ch05-pi` - Pi calculation
+- `ghcr.io/yasinoz/kiamol/ch05-pi:latest` - Pi calculation
 - `k8s.gcr.io/metrics-server/metrics-server:v0.6.1` - Metrics for HPA
-- `sixeyed/configurable:21.04` - Configurable app
-- `sixeyed/whoami:24.07` - Identity service
-- `widgetario/products-db:postgres` - Database
+- `ghcr.io/yasinoz/sixeyed/configurable:21.04` - Configurable app
+- `ghcr.io/yasinoz/sixeyed/whoami:24.07` - Identity service
+- `ghcr.io/yasinoz/widgetario/products-db:postgres` - Database
 
 ### rbac
-- `kiamol/ch17-kube-explorer` - Kubernetes explorer
-- `kiamol/ch03-sleep` - Sleep container
-- `kiamol/ch17-user-cert-generator` - Certificate generator
+- `ghcr.io/yasinoz/kiamol/ch17-kube-explorer:latest` - Kubernetes explorer
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
+- `ghcr.io/yasinoz/kiamol/ch17-user-cert-generator:latest` - Certificate generator
 
 ### rollouts
-- `nginx:1.18-alpine`, `nginx:1.20-alpine` - Different versions
-- `kiamol/ch03-sleep` - Sleep container
-- `kiamol/ch09-vweb:v1`, `v2`, `v3` - Versioned app
+- `ghcr.io/yasinoz/library/nginx:1.18-alpine`, `ghcr.io/yasinoz/library/nginx:1.20-alpine` - Different versions
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
+- `ghcr.io/yasinoz/kiamol/ch09-vweb:v1`, `v2`, `v3` - Versioned app
 
 ### secrets
-- `sixeyed/configurable:21.04` - Configurable app demonstrating secrets
+- `ghcr.io/yasinoz/sixeyed/configurable:21.04` - Configurable app demonstrating secrets
 
 ### services
-- `kiamol/ch03-sleep` - Sleep container
-- `sixeyed/whoami:24.07` - Identity service
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
+- `ghcr.io/yasinoz/sixeyed/whoami:24.07` - Identity service
 
 ### statefulsets
-- `adminer:4-standalone` - Database UI
-- `kiamol/ch03-sleep` - Sleep container
-- `nginx:1.18-alpine` - Web server
-- `widgetario/products-db:postgres-replicated` - Replicated database
+- `ghcr.io/yasinoz/library/adminer:4-standalone` - Database UI
+- `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` - Sleep container
+- `ghcr.io/yasinoz/library/nginx:1.18-alpine` - Web server
+- `ghcr.io/yasinoz/widgetario/products-db:postgres-replicated` - Replicated database
 
 ### tools
 - `k8s.gcr.io/metrics-server-amd64:v0.3.6` - Metrics server
-- `kiamol/ch03-numbers-api` - Demo API
-- `kiamol/ch03-numbers-web` - Demo web app
-- `kubernetesui/dashboard:v2.3.1` - Kubernetes dashboard
-- `kubernetesui/metrics-scraper:v1.0.6` - Dashboard metrics
+- `ghcr.io/yasinoz/kiamol/ch03-numbers-api:latest` - Demo API
+- `ghcr.io/yasinoz/kiamol/ch03-numbers-web:latest` - Demo web app
+- `ghcr.io/yasinoz/kubernetesui/dashboard:v2.3.1` - Kubernetes dashboard
+- `ghcr.io/yasinoz/kubernetesui/metrics-scraper:v1.0.6` - Dashboard metrics
 
 ### troubleshooting
-- `kiamol/ch05-pi` - Working version
+- `ghcr.io/yasinoz/kiamol/ch05-pi:latest` - Working version
 - `kiamol/ch05-pi-app` - Broken version
 
 ### troubleshooting-2
-- `nginx:1.23-alpine` - Web server
+- `ghcr.io/yasinoz/library/nginx:1.23-alpine` - Web server
 
 ### troubleshooting-3
 - Uses Helm templates (no fixed images)
@@ -255,5 +255,5 @@ The following Docker images are used across all labs:
 1. Some labs use template variables (e.g., `{{ .Values.image }}`) which are resolved at deployment time
 2. The `docker` and `helm` labs don't contain fixed image references in their specs
 3. Many images are versioned (e.g., `:21.04`, `:v1.2.0`) for reproducibility
-4. Several labs use the same images for consistency (e.g., `kiamol/ch03-sleep` for testing)
+4. Several labs use the same images for consistency (e.g., `ghcr.io/yasinoz/kiamol/ch03-sleep:latest` for testing)
 5. The course uses a mix of official images, course-specific images, and third-party images

@@ -59,7 +59,7 @@ The Helm `upgrade` command supports the `atomic` flag - so any errors in the upg
 This update doesn't cause an error during deployment, so you need a timeout to force the rollback when the Pods enter the CrashLoopBackOff state:
 
 ```
-helm upgrade --reuse-values --set blueImage=kiamol/ch09-vweb:v3 --atomic --timeout 30s  vweb labs/rollouts/solution/helm/vweb
+helm upgrade --reuse-values --set blueImage=ghcr.io/yasinoz/kiamol/ch09-vweb:v3 --atomic --timeout 30s  vweb labs/rollouts/solution/helm/vweb
 ````
 
 > You'll see the new v3 Pods fail, and after the timeout Helm rolls back they get terminated. The v1 Pods keep running because the update fails.
