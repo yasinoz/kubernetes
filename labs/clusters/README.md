@@ -17,6 +17,24 @@ In a production cluster the core Kubernetes components - called the control plan
 
 You can install Kubernetes on servers or VMs using the [Kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/) tool. In the cloud you would use the command line or web UI for your platform (e.g. [az aks create](https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest#az_aks_create) for Azure, [eksctl create cluster](https://eksctl.io/usage/creating-and-managing-clusters/) for AWS and [gcloud container clusters create](https://cloud.google.com/kubernetes-engine/docs/quickstart#create_cluster) for GCP). We'll use k3d to create multi-node local environments.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 45 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Reference
 
 - [kubeadm init](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/) - to initialize a new cluster

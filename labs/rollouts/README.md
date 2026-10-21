@@ -15,6 +15,24 @@ Pod controllers manage Pods for you - when you update the Pod spec the controlle
 
 You can configure the controller to tweak how the rollout happens - you might choose a slow but safe update for a critical component. Deployment objects are the typical Pod controller, but all the controllers have rollout options.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 45 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Reference 
 
 - [Rollouts for Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#updating-a-deployment)

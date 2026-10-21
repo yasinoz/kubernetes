@@ -15,6 +15,24 @@ Affinity is a feature where you can request Pods to be scheduled in relation to 
 
 You add affinity rules to your Pod specification. They can be _required_ rules, which means they act as a constraint and if they can't be met then the Pod stays in the pending state. Or they can be _preferred_ rules, which means Kubernetes will try to meet them, but if it can't it will schedule the Pods anyway.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 45 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Reference
 
 - [Affinity and anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity) - applying to nodes and Pods

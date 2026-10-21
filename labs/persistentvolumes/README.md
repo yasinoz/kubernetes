@@ -17,6 +17,24 @@ Storage in Kubernetes is pluggable so it supports different types - from local d
 
 Those details are kept away from the application model using an abstraction - the [PersistentVolumeClaim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#introduction), which an app uses to request storage.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 45 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## API specs
 
 - [PersistentVolumeClaim](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#persistentvolumeclaim-v1-core)

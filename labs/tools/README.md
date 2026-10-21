@@ -15,6 +15,24 @@ Kubectl is great but sometimes you need something else to help you navigate your
 
 These exercises will walk you through some of the more popular tools.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 40 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Reference
 
 - [Dashboard - web UI](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)

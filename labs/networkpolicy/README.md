@@ -17,6 +17,24 @@ That makes it easy to model distributed applications, but it means you can't hav
 
 Those are security gaps which the Network Policy API fills, allowing you to model network access as part of your application deployment. The API is straightforward but Kubernetes has a plugin model for its networking component and not all network plugins apply policies.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 45 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Reference
 
 - [NetworkPolicy API spec](https://v1-18.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#networkpolicy-v1-networking-k8s-io)

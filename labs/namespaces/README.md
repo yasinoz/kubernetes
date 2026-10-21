@@ -17,6 +17,24 @@ Namespaces are Kubernetes resources which are a container for other resources. Y
 
 You introduce some complexity using namespaces but they give you a lot of safeguards so you can confidently run multiple workloads on a single cluster without compromising scale or security.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 35 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## API specs
 
 - [Namespace](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#namespace-v1-core)

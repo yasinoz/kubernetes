@@ -17,6 +17,24 @@ Kubernetes validates API specs for correctness when you deploy them, but it does
 
 Objects like Services and Pods are loosely-coupled, so it's easy to break your application if there are errors in your specs.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 60 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Lab
 
 This one is all lab :) Try running this app - and make whatever changes you need to get the app running, so the Pod is healthy with no restarts.

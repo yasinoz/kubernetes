@@ -16,6 +16,24 @@ The [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) is the basic unit
 Pod specs are very simple. The minimal YAML needs some metadata - like the name of the Pod - and the specification needs a name for the container, and the image to run.
 
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 45 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## API specs
 
 - [Pod](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/)

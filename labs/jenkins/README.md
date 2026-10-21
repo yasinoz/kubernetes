@@ -21,6 +21,24 @@ These exercises run a full local build setup in Kubernetes:
 
 You don't typically run all this yourself, but it's very useful to see how it all fits together and have it as a backup option if your other services go down.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 55 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Reference
 
 - [Using images from a private registry in Pods](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)

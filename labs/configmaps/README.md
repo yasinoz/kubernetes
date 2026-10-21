@@ -13,6 +13,24 @@ upstream: labs/configmaps
 
 There are two ways to store configuration settings in [ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/) - either as key-value pairs, which you'll surface as environment variables, or as text data which you'll surface as files in the container filesystem.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 40 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## API specs
 
 - [ConfigMap](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#configmap-v1-core)

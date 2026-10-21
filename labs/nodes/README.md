@@ -17,6 +17,24 @@ Nodes are the machines in your cluster which actually run containers. Kubernetes
 
 This is a simple lab to get you used to working with Kubectl, and to see some of the interesting things Kubernetes knows about the machines in the cluster.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 30 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Working with Nodes
 
 Two of the most common Kubectl commands are `get` and `describe`.

@@ -18,6 +18,24 @@ There are two parts to Ingress:
 
 You can choose from different controllers. We'll use the [Nginx Ingress Controller](https://kubernetes.github.io/ingress-nginx/), but [Traefik](https://doc.traefik.io/traefik/providers/kubernetes-ingress/) and [Contour - a CNCF project](https://projectcontour.io) are popular alternatives.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 50 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## API specs
 
 - [Ingress (networking.k8s.io/v1)](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#ingress-v1-networking-k8s-io)

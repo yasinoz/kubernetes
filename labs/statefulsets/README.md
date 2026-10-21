@@ -17,6 +17,24 @@ But some apps need a stable environment, where objects are created in a known or
 
 StatefulSets are Pod controllers which can create multiple replicas in a stable environment. Replicas have known names, start consecutively and are individually addressable within the cluster.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 50 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## API specs
 
 - [StatefulSet (apps/v1)](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/stateful-set-v1/)

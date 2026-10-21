@@ -18,6 +18,24 @@ They're for workloads where you want high-availabilty across multiple nodes, but
 
 Deployments are better suited to most apps and DaemonSets are less common, but you will see them used and they're not complex to work with.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 35 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## API specs
 
 - [DaemonSet (apps/v1)](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#daemonset-v1-apps)

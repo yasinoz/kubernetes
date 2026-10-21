@@ -13,6 +13,24 @@ upstream: labs/troubleshooting-2
 
 Modelling apps in Kubernetes involves multiple resources, Even simple apps use ConfigMaps, Secrets, PersistentVolumes, and Namespaces. Any mistakes in configuration will make apps fail in interesting ways.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 60 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Lab
 
 This lab presents a (pretend) web application that reads configuration from a ConfigMap, database credentials from a Secret, and stores data in a PersistentVolume. The app is deployed to a custom namespace.

@@ -13,6 +13,24 @@ upstream: labs/logging
 
 It's difficult to work with Pod logs at scale - Kubectl doesn't let you search or filter log entries. The production-ready option is to run a central logging subsystem, which collects all Pod logs and stores them in a central database. EFK is the usual system for doing that in Kubernetes.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 45 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Reference
 
 - [Kubernetes logging architecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/#logging-at-the-node-level)

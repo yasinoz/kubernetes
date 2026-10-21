@@ -17,6 +17,24 @@ Kubernetes can fix apps which have temporary failures, automatically scale up ap
 
 These are the things you'll add to your application models to get ready for production.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 50 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## API specs
 
 - [ContainerProbe](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#probe-v1-core)

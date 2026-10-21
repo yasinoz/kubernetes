@@ -15,6 +15,24 @@ The key to optimizing Docker builds is to use the right base images, and keep yo
 
 Multi-stage builds are a great way to centralize your toolset - developers and build servers just need Docker and the source code, all the tools come packaged in Docker images, so everyone's using the same versions.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 40 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Reference
 
 - [Multi-stage build docs](https://docs.docker.com/develop/develop-images/multistage-build/)

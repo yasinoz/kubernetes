@@ -13,6 +13,24 @@ upstream: labs/monitoring
 
 Kubernetes can run hundreds of containers across dozens of servers. To keep track of them you run a monitoring server like [Prometheus](https://prometheus.io) which collects metrics from all of your containers. Prometheus stores the data and lets you query it - and you can visualize dashboards using [Grafana](https://grafana.com). 
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 45 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Reference
 
 - [Helm chart for installing Prometheus](https://github.com/prometheus-community/helm-charts)

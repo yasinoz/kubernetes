@@ -20,6 +20,24 @@ There are two parts to [RBAC](https://kubernetes.io/docs/reference/access-authn-
 
 Roles and RoleBindings apply to objects in a specific namespace; there are also ClusterRole and ClusterRoleBindings which have a similar API and secure access to objects across all namespaces.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 50 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## API specs
 
 - [Role](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#role-v1-rbac-authorization-k8s-io)

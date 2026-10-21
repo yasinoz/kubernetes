@@ -15,6 +15,24 @@ Helm adds a templating language on top of the standard Kubernetes YAML. You turn
 
 Application packages in Helm are called charts, and you can install a chart from a local folder, a compressed archive, or from a remote chart repository (similar to Docker Hub, but for apps). Charts just contain the YAML templates so they're small downloads - container images are still pulled from the image registry.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 50 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Reference
 
 - [Helm documentation](https://helm.sh/docs/)

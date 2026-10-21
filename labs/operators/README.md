@@ -17,6 +17,24 @@ That's what the [operator pattern](https://kubernetes.io/docs/concepts/extend-ku
 
 > One of the problems with public operators is that you take a dependency on a third-party to maintain and update their deployments. The operators we use in this lab are good examples - they don't support ARM64 processors, so if you're using Apple Silicon then you won't be able to run all the exercises.
 
+<!-- prereqs:auto -->
+## Before you start
+
+Takes about 55 minutes.
+
+A **Kubernetes cluster** must be running. Docker Desktop ships one:
+*Settings -> Kubernetes -> Enable Kubernetes*. Check it:
+
+```
+kubectl get nodes
+```
+
+You should see at least one node with `STATUS` of `Ready`. If the command
+hangs or errors, the cluster is still starting - give it a minute and try
+again.
+
+> Run every command from the **root of this repository** - the paths in this lab are written relative to it.
+
 ## Reference
 
 - [Custom Resources](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) - extending Kubernetes with your own object type
