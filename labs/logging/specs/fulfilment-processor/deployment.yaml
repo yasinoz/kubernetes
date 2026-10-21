@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: courselabs/fulfilment-processor:25.03
+          image: courselabs/fulfilment-processor@sha256:578bc38424a1891bbe613925a04e27461fd6cad36de31a2efdbab0acb5d19b26
           env:
             - name: Observability__Logging__File
               value: 'true'
