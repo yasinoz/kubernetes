@@ -5,7 +5,7 @@ slug: tools
 section: production
 order: 3
 duration: 40
-requires: [kubernetes]
+requires: [kubernetes, helm]
 status: updated
 upstream: labs/tools
 ---
@@ -64,6 +64,18 @@ kubectl get nodes
 You should see at least one node with `STATUS` of `Ready`. If the command
 hangs or errors, the cluster is still starting - give it a minute and try
 again.
+
+**Helm** must be installed - it is a separate command line tool, it
+does not come with Docker Desktop. Check it:
+
+```
+helm version --short
+```
+
+A version number like `v3.x.x` means you are ready. If you get
+`command not found`, install it first: on Windows `winget install Helm.Helm`,
+on macOS `brew install helm`, or follow
+[helm.sh/docs/intro/install](https://helm.sh/docs/intro/install/).
 
 > Run every command from the **root of this repository** - the paths in this lab are written relative to it.
 
