@@ -6,7 +6,7 @@ section: core
 order: 1
 duration: 30
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/nodes
 ---
 # Examining Nodes with Kubectl

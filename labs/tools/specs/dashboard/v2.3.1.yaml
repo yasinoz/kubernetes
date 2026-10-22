@@ -270,9 +270,13 @@ spec:
     metadata:
       labels:
         k8s-app: dashboard-metrics-scraper
-      annotations:
-        seccomp.security.alpha.kubernetes.io/pod: 'runtime/default'
     spec:
+      # seccomp.security.alpha.kubernetes.io/pod ek aciklamasi Kubernetes
+      # 1.27'den beri ISLEVSIZ; kubectl apply uyari basiyor ve ek aciklama
+      # hicbir sey yapmiyordu. Karsiligi securityContext.seccompProfile.
+      securityContext:
+        seccompProfile:
+          type: RuntimeDefault
       containers:
         - name: dashboard-metrics-scraper
           image: ghcr.io/yasinoz/kubernetesui/metrics-scraper:v1.0.6

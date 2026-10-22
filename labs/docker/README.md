@@ -6,7 +6,7 @@ section: cicd
 order: 1
 duration: 40
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/docker
 ---
 # Docker Image Optimiziation

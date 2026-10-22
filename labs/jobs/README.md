@@ -6,7 +6,7 @@ section: advanced-modelling
 order: 4
 duration: 40
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/jobs
 ---
 # Running One-off Pods with Jobs and Recurring Pods with CronJobs

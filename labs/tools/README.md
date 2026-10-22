@@ -6,7 +6,7 @@ section: production
 order: 3
 duration: 40
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/tools
 ---
 # Tools

@@ -6,7 +6,7 @@ section: cicd
 order: 2
 duration: 40
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/buildkit
 ---
 # Building Docker Images with BuildKit
