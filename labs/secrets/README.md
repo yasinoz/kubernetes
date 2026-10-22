@@ -6,7 +6,7 @@ section: modelling
 order: 2
 duration: 40
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/secrets
 ---
 # Configuring Apps with Secrets

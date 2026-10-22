@@ -6,7 +6,7 @@ section: operating
 order: 3
 duration: 45
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/logging
 ---
 # Centralized Logging with Elasticsearch, Fluentd and Kibana (EFK)

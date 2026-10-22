@@ -6,7 +6,7 @@ section: core
 order: 3
 duration: 45
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/services
 ---
 # Networking Pods with Services

@@ -6,7 +6,7 @@ section: cicd
 order: 4
 duration: 45
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/rollouts
 ---
 # Updates with Staged Rollouts

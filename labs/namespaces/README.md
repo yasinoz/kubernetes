@@ -6,7 +6,7 @@ section: modelling
 order: 4
 duration: 35
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/namespaces
 ---
 # Isolating Workloads with Namespaces

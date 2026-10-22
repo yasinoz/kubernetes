@@ -6,7 +6,7 @@ section: advanced-modelling
 order: 2
 duration: 35
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/daemonsets
 ---
 

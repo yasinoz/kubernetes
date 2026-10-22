@@ -6,7 +6,7 @@ section: production
 order: 2
 duration: 45
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/affinity
 ---
 # Scheduling with Pod and Node Affinity

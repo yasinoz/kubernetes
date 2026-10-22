@@ -6,7 +6,7 @@ section: core
 order: 4
 duration: 45
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/deployments
 ---
 # Scaling and Managing Pods with Deployments

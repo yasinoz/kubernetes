@@ -6,7 +6,7 @@ section: modelling
 order: 1
 duration: 40
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/configmaps
 ---
 # Configuring Apps with ConfigMaps

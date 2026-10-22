@@ -6,7 +6,7 @@ section: advanced-modelling
 order: 1
 duration: 50
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/rbac
 ---
 # Role-Based Access Control

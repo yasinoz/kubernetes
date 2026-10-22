@@ -6,7 +6,7 @@ section: advanced-modelling
 order: 3
 duration: 50
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/ingress
 ---
 # Ingress

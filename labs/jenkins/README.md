@@ -6,7 +6,7 @@ section: cicd
 order: 5
 duration: 55
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/jenkins
 ---
 # CI/CD with Jenkins

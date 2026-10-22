@@ -6,7 +6,7 @@ section: core
 order: 2
 duration: 45
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/pods
 ---
 # Running Containers in Pods

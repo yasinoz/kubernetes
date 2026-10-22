@@ -6,7 +6,7 @@ section: modelling
 order: 3
 duration: 45
 requires: [kubernetes]
-status: needs-review
+status: updated
 upstream: labs/persistentvolumes
 ---
 # Storing Application Data with PersistentVolumes
