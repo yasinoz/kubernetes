@@ -15,6 +15,40 @@ BuildKit is the image building engine inside Docker. It's not part of other cont
 
 This powers a CI/CD pipeline running in Kubernetes, where you can have a BuildKit Pod building images from source. Builds are managed by an automation server - like Jenkins - which sends commands to the BuildKit server.
 
+<!-- orientation:auto -->
+## How this lab works
+
+Read this once - every lab in this track follows the same rules.
+
+**Where you type the commands.** Open a terminal and go to the folder where you
+cloned this repository. On Windows use **PowerShell** (search for it in the
+Start menu), on macOS or Linux use **Terminal**. Every path in this lab is
+written from the repository root, so stay there unless a step says otherwise.
+
+**Lines starting with `>` are explanations, not commands.** Don't paste them.
+Only the text inside grey code boxes gets typed.
+
+**The 📋 sign means it's your turn.** When you see it, try the step yourself
+first. Underneath it there is a collapsed **"Not sure how?"** arrow with the
+answer - open it *after* you have tried, not before. The labs are written this
+way on purpose: you remember what you worked out, not what you pasted.
+
+**If a command fails, that is normal.** Some steps fail deliberately to show
+you what the error looks like. Read the sentence above the command before you
+assume something is broken.
+
+**When you get stuck**, in this order:
+
+1. Re-read the paragraph above the command - the answer is usually there.
+2. Open the **"Not sure how?"** arrow.
+3. Open `hints.md` for a nudge.
+4. Open `solution.md` for the full answer. Using it is fine; copying it without
+   reading is not.
+
+**When you finish**, run the **Cleanup** section at the bottom. Labs share
+ports and container names, so leftovers from one lab break the next one.
+<!-- /orientation:auto -->
+
 <!-- prereqs:auto -->
 ## Before you start
 
