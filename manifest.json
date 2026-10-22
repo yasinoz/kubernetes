@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-21",
+  "generated": "2026-10-22",
   "track": {
     "slug": "kubernetes",
     "titles": {
@@ -73,7 +73,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/pods",
           "docs": {
             "en": {
@@ -97,7 +97,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/services",
           "docs": {
             "en": {
@@ -121,7 +121,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/deployments",
           "docs": {
             "en": {
@@ -159,7 +159,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/configmaps",
           "docs": {
             "en": {
@@ -183,7 +183,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/secrets",
           "docs": {
             "en": {
@@ -207,7 +207,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/persistentvolumes",
           "docs": {
             "en": {
@@ -231,7 +231,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/namespaces",
           "docs": {
             "en": {
@@ -269,7 +269,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/rbac",
           "docs": {
             "en": {
@@ -293,7 +293,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/daemonsets",
           "docs": {
             "en": {
@@ -317,7 +317,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/ingress",
           "docs": {
             "en": {
@@ -365,7 +365,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/statefulsets",
           "docs": {
             "en": {
@@ -427,7 +427,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/monitoring",
           "docs": {
             "en": {
@@ -451,7 +451,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/logging",
           "docs": {
             "en": {
@@ -561,7 +561,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/rollouts",
           "docs": {
             "en": {
@@ -585,7 +585,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/jenkins",
           "docs": {
             "en": {
@@ -647,7 +647,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/networkpolicy",
           "docs": {
             "en": {
@@ -757,7 +757,7 @@
           "requires": [
             "kubernetes"
           ],
-          "status": "needs-review",
+          "status": "updated",
           "path": "labs/affinity",
           "docs": {
             "en": {
@@ -886,7 +886,8 @@
     "en": 31,
     "tr": 0,
     "by_status": {
-      "needs-review": 31
+      "needs-review": 14,
+      "updated": 17
     }
   }
 }
