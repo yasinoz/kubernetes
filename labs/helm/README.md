@@ -6,7 +6,7 @@ section: cicd
 order: 3
 duration: 50
 requires: [kubernetes, helm]
-status: needs-review
+status: updated
 upstream: labs/helm
 ---
 # Packaging and Deploying Apps with Helm
